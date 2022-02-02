@@ -24,7 +24,7 @@ export function AboutEachSection(props) {
         <div className='bg-opacity-20 bg-gray-300 p-10 rounded-md m-6'>
             <div className='text-black flex flex-wrap flex-row justify-center'>
                 <div className={`lg:w-5/12 my-3 lg:mr-9 p-${props.padding} bg-white bg-opacity-20 rounded-lg`}>
-                    <img className='aspect-auto' src={props.imgSrc} alt='' />
+                    <img className='aspect-auto rounded-lg' src={props.imgSrc} alt='' />
                 </div>
                 <div className='lg:w-6/12 items-center text-white lg:mx-3 flex flex-col justify-center'>
                     <h3 className='text-4xl'>{props.title}</h3>
