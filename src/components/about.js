@@ -20,7 +20,6 @@ export default class About extends Component {
 }
 
 export function AboutEachSection(props) {
-    console.log(props);
     return (
         <div className='bg-opacity-50 bg-white p-3 lg:p-10 rounded-md my-6 lg:m-6'>
             <div className='text-black flex flex-wrap flex-col md:flex-row justify-center'>
