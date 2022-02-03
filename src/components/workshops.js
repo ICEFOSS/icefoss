@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Workshop extends Component {
   render() {
     return (
-      <>
+      <div id="Workshops">
         <h2 className="text-5xl my-10 ml-10 flex justify-center">Workshop</h2>
         <div className="flex flex-row flex-wrap  justify-center">
           <AboutEachSection
@@ -19,7 +19,7 @@ export default class Workshop extends Component {
             buttonn="Register"
           />
         </div>
-      </>
+      </div>
     );
   }
 }
