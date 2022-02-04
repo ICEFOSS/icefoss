@@ -11,6 +11,22 @@ function App() {
   return (
     <><section>
       <Nav />
+      </section>
+    <section className='text-white'>
+    <section className='px-10 from-lightbgblue to-darkbgblue bg-gradient-to-b'>
+        <Landing />
+      </section>
+      <div className='flex justify-center w-full overflow-hidden'>
+          
+          <Bubble_svg />
+        </div>
+      <section className='px-10 from-lightbgblue to-darkbgblue bg-gradient-to-b'>
+        <About />
+      </section>
+
+      <section className='px-10 from-lightbgblue to-darkbgblue bg-gradient-to-b'>
+        <Speaker />
+      </section>
     </section>
     <section className='mx-10  text-gray-800'>
         <Landing />
