@@ -21,9 +21,9 @@ export default class About extends Component {
 
 export function AboutEachSection(props) {
     return (
-        <div className='bg-opacity-50 bg-white p-3 lg:p-10 rounded-md my-6 lg:m-6'>
+        <div className='bg-opacity-50 bg-white shadow-sm shadow-black p-3 lg:p-10 rounded-md my-6 lg:m-6'>
             <div className='text-black flex flex-wrap flex-col md:flex-row justify-center'>
-                <div className={`lg:w-5/12 mt-4 mb-10 w-fit bg-blue-400 bg-opacity-40 rounded-lg saturate-150 customname`}>
+                <div className={`lg:w-5/12 mt-4 mb-10 w-fit from-blue-400 to-sky-300 bg-gradient-to-br bg-opacity-10 shadow-md shadow-black rounded-lg saturate-150 customname`}>
                     <img className={`aspect-auto rounded-lg ${props.p} shadow-slate-600 shadow-lg`} src={props.imgSrc} alt='photo' />
                 </div>
                 <div className='lg:w-6/12 items-center text-black lg:mx-3 flex flex-col justify-center'>
