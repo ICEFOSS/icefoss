@@ -4,7 +4,7 @@ export default class Workshop extends Component {
   render() {
     return (
       <div className=" py-40" id="Workshops">
-        <h2 className="text-5xl my-10 ml-10 flex justify-center">Workshops</h2>
+        <h2 className="text-5xl mb-20 text-sky-200 flex justify-center">Workshops</h2>
         <div className="flex flex-row flex-wrap justify-center gap-3">
           {/* <AboutEachSection
             title="WORKSHOP1"
