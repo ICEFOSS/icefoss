@@ -1,21 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <style>
+    body {
+      background-color: #00a0ac;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    .sea {
+      margin: 40px auto 0;
+      overflow: hidden;
+    }
+
+    .sea .bubble {
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #00edff;
+      opacity: 0.9;
+      -webkit-animation: bubble1-h-movement 1s ease-in infinite, bubble1-v-movement 300ms ease-in-out infinite alternate, bubble-scale-movement 300ms ease-in-out infinite alternate;
+      animation: bubble1-h-movement 1s ease-in infinite, bubble1-v-movement 300ms ease-in-out infinite alternate, bubble-scale-movement 300ms ease-in-out infinite alternate;
+    }
+
+    .sea .bubble:after {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #00edff;
+      opacity: 0.9;
+    }
+
+    .sea .bubble:after {
+      top: -20;
+      left: 100px;
+      width: 9px;
+      height: 9px;
+    }
+
+    .sea .circle-wrapper {
+      position: relative;
+      background: linear-gradient(#2e89ad, #00edff);
+      width: 300px;
+      height: 300px;
+      margin: 10px auto 0 auto;
+      overflow: hidden;
+      z-index: 0;
+      border-radius: 50%;
+      padding: 0 50px 0 50px;
+      border: 6px solid #00edff;
+    }
+
+    .sea .submarine-wrapper {
+      height: 300px;
+      width: 300px;
+      padding: 30px 50px 30px 150px;
+      margin: auto auto;
+      -webkit-animation: diving 3s ease-in-out infinite, diving-rotate 3s ease-in-out infinite;
+      animation: diving 3s ease-in-out infinite, diving-rotate 3s ease-in-out infinite;
+    }
+
+    .sea .submarine-wrapper .submarine-body {
+      width: 150px;
+      height: 80px;
+      position: absolute;
+      margin-top: 50px;
+      left: 25px;
+      background-color: #D93A54;
+      border-radius: 40px;
+      background: linear-gradient(#D93A54, #bc243d);
+    }
+
+    .sea .submarine-wrapper .submarine-body .light {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 40px 150px 40px;
+      border-color: transparent transparent #00edff transparent;
+      transform: rotate(-50deg);
+      top: 40px;
+      left: 99%;
+    }
+
+    .sea .submarine-wrapper .submarine-body .light:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 13px;
+      border-radius: 5px;
+      background-color: #d12844;
+      margin-left: -10px;
+    }
+
+    .sea .submarine-wrapper .submarine-body .window {
+      width: 37px;
+      height: 37px;
+      position: absolute;
+      margin-top: 23px;
+      right: 18px;
+      background: linear-gradient(#52a2c2, #98d3eb);
+      border-radius: 50%;
+      border: 3px solid #D93A54;
+    }
+
+    .sea .submarine-wrapper .submarine-body .window:after {
+      content: "";
+      position: absolute;
+      margin-top: 3px;
+      margin-left: 3px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: transparent;
+      opacity: 0.8;
+      border-top: 3px solid white;
+      transform: rotate(-45deg);
+    }
+
+    .sea .submarine-wrapper .submarine-body .engine {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      margin-top: 32px;
+      left: 53px;
+      background-color: #bc243d;
+      border-radius: 50%;
+      border: 5px solid #D93A54;
+    }
+
+    .sea .submarine-wrapper .submarine-body .engine:after,
+    .sea .submarine-wrapper .submarine-body .engine:before {
+      position: absolute;
+      content: "";
+      border-radius: 2px;
+      background-color: white;
+      -webkit-animation: spin 900ms linear infinite;
+      animation: spin 900ms linear infinite;
+      opacity: 0.8;
+    }
+
+    .sea .submarine-wrapper .submarine-body .engine:after {
+      top: 8px;
+      width: 20px;
+      height: 4px;
+    }
+
+    .sea .submarine-wrapper .submarine-body .engine:before {
+      left: 8px;
+      width: 4px;
+      height: 20px;
+    }
+
+    .sea .submarine-wrapper .helix {
+      width: 30px;
+      height: 70px;
+      position: absolute;
+      margin-top: 55px;
+      left: 0;
+      background-color: #D93A54;
+      border-radius: 7px;
+      background: linear-gradient(#D93A54, #bc243d);
+    }
+
+    .sea .submarine-wrapper .helix:after {
+      content: "";
+      position: absolute;
+      margin-top: 5px;
+      margin-left: 7px;
+      width: 17px;
+      height: 60px;
+      border-radius: 3px;
+      background-color: transparent;
+      opacity: 0.8;
+      background: linear-gradient(to bottom, #D93A54, #D93A54 50%, #e57a8c 50%, #e57a8c);
+      background-size: 100% 20px;
+      -webkit-animation: helix-movement 110ms linear infinite;
+      animation: helix-movement 110ms linear infinite;
+    }
+
+    .sea .submarine-wrapper .hat {
+      width: 65px;
+      height: 25px;
+      position: absolute;
+      margin-top: 26px;
+      left: 70px;
+      background-color: #D93A54;
+      border-radius: 10px 10px 0 0;
+      background: linear-gradient(#D93A54, #d72d49);
+    }
+
+    .sea .submarine-wrapper .hat .periscope {
+      position: absolute;
+      width: 7px;
+      height: 20px;
+      background-color: #D93A54;
+      margin-top: -27px;
+      margin-left: 32px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .sea .submarine-wrapper .hat .periscope:after,
+    .sea .submarine-wrapper .hat .periscope:before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 7px;
+      border-radius: 5px;
+      background-color: #D93A54;
+    }
+
+    .sea .submarine-wrapper .hat .leds-wrapper {
+      width: 53px;
+      height: 13px;
+      position: relative;
+      top: 7px;
+      left: 7px;
+      background-color: #D93A54;
+      border-radius: 10px;
+      background: linear-gradient(#b3233a, #a21f35);
+    }
+
+    .sea .submarine-wrapper .hat .leds-wrapper .leds {
+      position: absolute;
+      margin-top: 4px;
+      margin-left: 7px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: white;
+      -webkit-animation: leds-off 500ms linear infinite;
+      animation: leds-off 500ms linear infinite;
+    }
+
+    .sea .submarine-wrapper .hat .leds-wrapper .leds:after,
+    .sea .submarine-wrapper .hat .leds-wrapper .leds:before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .sea .submarine-wrapper .hat .leds-wrapper .leds:after {
+      margin-top: 0px;
+      margin-left: 17px;
+    }
+
+    .sea .submarine-wrapper .hat .leds-wrapper .leds:before {
+      margin-top: 0px;
+      margin-left: 34px;
+    }
+
+    @-webkit-keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @-webkit-keyframes leds-off {
+      100% {
+        opacity: 0.3;
+      }
+    }
+
+    @keyframes leds-off {
+      100% {
+        opacity: 0.3;
+      }
+    }
+
+    @-webkit-keyframes helix-movement {
+      100% {
+        background: linear-gradient(to bottom, #e57a8c 50%, #e57a8c, #D93A54, #D93A54 50%);
+        background-size: 100% 20px;
+      }
+    }
+
+    @keyframes helix-movement {
+      100% {
+        background: linear-gradient(to bottom, #e57a8c 50%, #e57a8c, #D93A54, #D93A54 50%);
+        background-size: 100% 20px;
+      }
+    }
+
+    @-webkit-keyframes diving {
+      0% {
+        margin-top: 5px;
+      }
+
+      50% {
+        margin-top: 15px;
+      }
+
+      100% {
+        margin-top: 5px;
+      }
+    }
+
+    @keyframes diving {
+      0% {
+        margin-top: 5px;
+      }
+
+      50% {
+        margin-top: 15px;
+      }
+
+      100% {
+        margin-top: 5px;
+      }
+    }
+
+    @-webkit-keyframes diving-rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(3deg);
+      }
+
+      75% {
+        transform: rotate(-2deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes diving-rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(3deg);
+      }
+
+      75% {
+        transform: rotate(-2deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    @-webkit-keyframes bubble1-h-movement {
+      0% {
+        margin-left: 80%;
+      }
+
+      100% {
+        margin-left: -100%;
+      }
+    }
+
+    @keyframes bubble1-h-movement {
+      0% {
+        margin-left: 80%;
+      }
+
+      100% {
+        margin-left: -100%;
+      }
+    }
+
+    @-webkit-keyframes bubble2-h-movement {
+      0% {
+        margin-left: 65%;
+      }
+
+      100% {
+        margin-left: -5%;
+      }
+    }
+
+    @keyframes bubble2-h-movement {
+      0% {
+        margin-left: 65%;
+      }
+
+      100% {
+        margin-left: -5%;
+      }
+    }
+
+    @-webkit-keyframes bubble1-v-movement {
+      0% {
+        margin-top: 115px;
+      }
+
+      100% {
+        margin-top: 160px;
+      }
+    }
+
+    @keyframes bubble1-v-movement {
+      0% {
+        margin-top: 115px;
+      }
+
+      100% {
+        margin-top: 160px;
+      }
+    }
+
+    @-webkit-keyframes bubble2-v-movement {
+      0% {
+        margin-top: 115px;
+      }
+
+      100% {
+        margin-top: 90px;
+      }
+    }
+
+    @keyframes bubble2-v-movement {
+      0% {
+        margin-top: 115px;
+      }
+
+      100% {
+        margin-top: 90px;
+      }
+    }
+
+    @-webkit-keyframes bubble-scale-movement {
+      0% {
+        transform: scale(1.4);
+      }
+
+      100% {
+        transform: scale(0.9);
+      }
+    }
+
+    @keyframes bubble-scale-movement {
+      0% {
+        transform: scale(1.4);
+      }
+
+      100% {
+        transform: scale(0.9);
+      }
+    }
+
+    @-webkit-keyframes light-movement {
+      0% {
+        transform: rotate(-40deg);
+      }
+
+      50% {
+        transform: rotate(-70deg);
+      }
+
+      100% {
+        transform: rotate(-40deg);
+      }
+    }
+
+    @keyframes light-movement {
+      0% {
+        transform: rotate(-40deg);
+      }
+
+      50% {
+        transform: rotate(-70deg);
+      }
+
+      100% {
+        transform: rotate(-40deg);
+      }
+    }
+
+    .sea>p {
+      width: fit-content;
+      margin: 40px auto;
+    }
+  </style>
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,11 +517,32 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="sea">
+      <div class="circle-wrapper">
+        <div class="bubble"></div>
+        <div class="submarine-wrapper">
+          <div class="submarine-body">
+            <div class="window"></div>
+            <div class="engine"></div>
+            <div class="light"></div>
+          </div>
+          <div class="helix"></div>
+          <div class="hat">
+            <div class="leds-wrapper">
+              <div class="periscope"></div>
+              <div class="leds"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Loading ...</p>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +553,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
