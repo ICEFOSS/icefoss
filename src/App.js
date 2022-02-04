@@ -5,6 +5,7 @@ import Landing from './components/landing';
 import Nav from './components/nav';
 import Workshop from './components/workshops';
 import {Bubble_svg} from './components/constants'
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -33,8 +34,10 @@ function App() {
         </div>
         <section className='mx-10 md:mt-10 mt-28 text-gray-800'>
         <Workshop />
-      </section></>
-
+        </section>
+         <Bubble_svg />
+         <Footer />
+        </> 
   );
 }
 
