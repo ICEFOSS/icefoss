@@ -5,16 +5,17 @@ import { Ffsc_svg } from "./constants";
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <nav className=" bg-gray-900 fixed top-0 z-50 md:w-5/6 rounded-xl md:mt-2 md:mx-32 mt-1 w-11/12 mx-4 bg-opacity-90">
+    <div className="flex justify-center">
+      <nav className=" bg-gray-900 fixed top-0 z-50 md:w-5/6 rounded-xl md:mt-3 md:mx-32 mt-3 w-11/12 mx-4 bg-opacity-90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 ">
+
+            <div className="flex-shrink-0">
+              <Ffsc_svg />
+            </div>
             <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <Ffsc_svg />
-              </div>
               <div className="hidden md:block ">
-                <div className="ml-10 flex items-baseline space-x-4 s">
+                <div className="-mr-2 w-fit flex items-baseline space-x-4 ">
                   <a
                     href="#Landing"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -37,17 +38,10 @@ function Nav() {
                   </a>
 
                   <a
-                    href="#"
+                    href="#Workshops"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Workshops
-                  </a>
-
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Reports
                   </a>
                 </div>
               </div>
@@ -133,18 +127,12 @@ function Nav() {
                 </a>
 
                 <a
-                  href="#"
+                  href="#Workshops"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Workshops
                 </a>
 
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
-                </a>
               </div>
             </div>
           )}

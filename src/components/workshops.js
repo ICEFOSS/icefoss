@@ -3,9 +3,9 @@ import React, { Component } from "react";
 export default class Workshop extends Component {
   render() {
     return (
-      <>
-        <h2 className="text-5xl my-10 ml-10 flex justify-center">Workshop</h2>
-        <div className="flex flex-row flex-wrap  justify-center">
+      <div id="Workshops" className="mt-10 md:mt-10">
+        <h2 className="text-5xl ml-10 flex justify-center">Workshop</h2>
+        <div className="flex flex-row flex-wrap  py-4 sm: justify-center">
           <AboutEachSection
             title="WORKSHOP1"
             imgSrc="/assets/fisat.webp"
@@ -19,7 +19,7 @@ export default class Workshop extends Component {
             buttonn="Register"
           />
         </div>
-      </>
+      </div>
     );
   }
 }
@@ -27,7 +27,7 @@ export default class Workshop extends Component {
 export function AboutEachSection(props) {
   console.log(props);
   return (
-    <div className="md:flex flex-wrap flex-row justify-evenly md:items-center bg-opacity-50 bg-white p-3 md:p-5 md:w-4/12 rounded-md my-6 lg:m-6 shadow-sm transition-shadow duration-1000 hover:shadow-xl   shadow-gray-700 hover:shadow-gray-700">
+    <div className="md:flex flex-wrap flex-row justify-evenly md:items-center bg-opacity-50 bg-white p-3 md:p-5 md:w-4/12 rounded-md my-3 lg:m-6 shadow-sm transition-shadow duration-1000 hover:shadow-xl   shadow-gray-700 hover:shadow-gray-700">
       <div className="text-black flex flex-wrap flex-col md:flex-row justify-center">
         <div className="lg:w-5/12 items-center text-black lg:mx-3 flex flex-col justify-center">
           <img

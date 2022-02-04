@@ -197,3 +197,43 @@ export function Ffsc_svg(props) {
     </svg>
     );
 }
+
+export function Bubble_svg(props) {
+    let svg_active_style = `visible`;
+    if (props.isActive == false) {
+        svg_active_style = 'invisible';
+    } else {
+        svg_active_style = 'visible';
+    }
+    return (
+        <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full"
+      version="1.1"
+      viewBox="0 0 960 540"
+    >
+      <path fill="#5DC0ED" d="M0 0H960V540H0z"></path>
+      <path
+        fill="#2579f7"
+        d="M0 346l137-16 137 13 137 19 138-37 137 66 137-32 137 4v178H0z"
+      ></path>
+      <path
+        fill="#008efa"
+        d="M0 383l137-1 137-15 137 29 138-34 137 70 137-15 137 14v110H0z"
+      ></path>
+      <path
+        fill="#00a1f8"
+        d="M0 411l137 44 137-61 137 25 138 12 137 1 137-39 137 31v117H0z"
+      ></path>
+      <path
+        fill="#34b1f3"
+        d="M0 452l137 16 137-14 137 11 138-8 137 20 137 6 137-45v103H0z"
+      ></path>
+      <path
+        fill="#5dc0ed"
+        d="M0 482l137 30 137-24 137-3h138l137-8 137 36 137-30v58H0z"
+      ></path>
+    </svg>
+     
+    );
+}
