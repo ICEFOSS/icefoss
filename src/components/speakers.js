@@ -9,7 +9,7 @@ export default function Speaker() {
 
                 <div className="w-full ">
                     <div className="my-6">
-                        <div className="w-fit mx-auto bg-sky-200 text-blue-500 text-xl px-10 sm:px-20 lg:px-28 py-1 rounded-3xl opacity-70 shadow-sm shadow-blue-900">Guest Speaker</div>
+                        <div className="w-fit mx-auto bg-sky-200 text-blue-500 text-xl px-10 sm:px-20 lg:px-28 py-1 rounded-3xl opacity-70 shadow-sm shadow-blue-900 mt-20 mb-4">Guest Speaker</div>
                         <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-4 py-8">
                             <div className="flex flex-wrap flex-row justify-evenly gap-6 lg:mx-20 xl:mx-32">
                                 <Speaker_card
@@ -26,7 +26,7 @@ export default function Speaker() {
                         </section >
                     </div>
                     <div>
-                        <div className="w-fit mx-auto bg-sky-200 text-blue-500 text-xl px-10 sm:px-20 lg:px-28 py-1 rounded-3xl opacity-70 shadow-sm shadow-blue-900">Other Speaker's</div>
+                        <div className="w-fit mx-auto bg-sky-200 text-blue-500 text-xl px-10 sm:px-20 lg:px-28 py-1 rounded-3xl opacity-70 shadow-sm shadow-blue-900 mt-20 mb-4">Other Speaker's</div>
                         <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-4  py-8">
                             <div className="flex flex-wrap flex-row justify-evenly gap-4 lg:mx-20 xl:mx-32">
                                 <Speaker_card
