@@ -69,7 +69,7 @@ export default function Speaker() {
 export function Speaker_card(props) {
     return (
         <>
-            <div className="max-w-sm bg-sky-200 hover:bg-sky-100 bg-opacity-50 hover:bg-opacity-50 rounded-2xl  my-1 mx-1 w-80 sm:w-72 md:w-72 lg:w-[21rem] shadow-sm transition-all duration-1000 hover:shadow-xl   shadow-blue-900 hover:shadow-gray-700">
+            <div className="max-w-sm  hover:bg-sky-100  hover:bg-opacity-50 rounded-2xl  my-1 mx-1 w-80 sm:w-72 md:w-72 lg:w-[21rem] transition-all duration-1000 hover:shadow-xl bg-black bg-opacity-5 shadow-md shadow-black hover:shadow-gray-700">
                 <div className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-2 self-center">
                     <img className="my-3 w-40 md:w-48 rounded-full  shadow-gray-700 shadow-sm transition-shadow duration-700 hover:shadow-xl hover:shadow-gray-700 mx-auto" src={props.profile_img} alt="Bonnie image" />
                     <h3 className="text-3xl font-medium text-gray-900 text-center">{props.name}</h3>
