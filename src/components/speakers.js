@@ -3,9 +3,9 @@ export default function Speaker() {
     return (
 
         <>
-            <div className=" md:py-8 py-10" id="Speakers">
+            <div className="py-40" id="Speakers">
 
-                <h2 className='text-5xl my-10 ml-10 text-sky-200'>Speakers</h2>
+                <h2 className='text-5xl my-10 text-sky-200 text-center'>Speakers</h2>
 
                 <div className="w-full ">
                     <div className="my-6">
