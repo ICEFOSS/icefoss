@@ -14,29 +14,29 @@ function App() {
         <section>
           <Nav />
         </section>
-        <section className='px-10 from-lightbgblue to-darkbgblue bg-gradient-to-b'
+        <section className='px-10 from-lightbgblue to-darkbgblue bg-gradient-to-t'
           id='Landing'>
           <Landing />
         </section>
-        <div className="spacer layer1 bg-darkbgblue" />
+        <div className="spacer layer1 bg-lightbgblue" />
 
-        <section className='px-10 md:px-20 lg:px-48 from-lightbgblue to-darkbgblue bg-gradient-to-b'
+        <section className='px-10 md:px-20 lg:px-48 from-lightbgblue to-darkbgblue bg-gradient-to-t'
           id='About'>
           <About />
         </section>
-        <div className="spacer layer1 bg-darkbgblue" />
+        <div className="spacer layer1 bg-lightbgblue" />
 
-        <section className='px-10 from-lightbgblue to-darkbgblue bg-gradient-to-b'
+        <section className='px-10 from-lightbgblue to-darkbgblue bg-gradient-to-t'
           id='Speakers'>
           <Speaker />
         </section>
-        <div className="spacer layer1 bg-darkbgblue" />
+        <div className="spacer layer1 bg-lightbgblue" />
 
-        <section className='text-gray-800 px-10 from-lightbgblue to-darkbgblue bg-gradient-to-b'
+        <section className='text-gray-800 px-10 from-lightbgblue to-darkbgblue bg-gradient-to-t'
           id='Workshops'>
           <Workshop />
         </section>
-        <div className="spacer layer2 bg-darkbgblue" />
+        <div className="spacer layer2 bg-lightbgblue" />
 
         <Footer />
       </section>
