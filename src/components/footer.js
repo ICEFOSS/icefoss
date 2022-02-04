@@ -12,10 +12,10 @@ export default function Footer() {
                                 <div className="Venue m-2">
                                     <h3 className="text-white text-lg font-normal underline underline-offset-4 pb-2">Mobile</h3>
                                     <p className="max-w-xs mx-auto text-xs font-mono text-gray-200">
-                                    Lorem :ipsum dolor
+                                        Lorem :ipsum dolor
                                     </p>
                                     <p className="max-w-xs mx-auto text-xs font-mono text-gray-200">
-                                    Lorem :ipsum dolor
+                                        Lorem :ipsum dolor
                                     </p>
                                 </div>
                             </div>
@@ -57,14 +57,14 @@ export default function Footer() {
                             </div>
                         </div>
                         <div class="text-center text-xs p-4 bg container px-6 pt-6 font-sans w-full">
-                        Created & designed by Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                       <br></br>
-                        <span className=" font-serif">&copy;</span> 2022 Icefoss
+                            Created & designed by Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                            <br></br>
+                            <span className=" font-serif">&copy;</span> 2022 Icefoss
                         </div>
-                        
+
                     </div>
                 </div>
-               
+
             </footer>
         </div>
     )
