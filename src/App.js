@@ -36,7 +36,7 @@ function App() {
           id='Workshops'>
           <Workshop />
         </section>
-        <div className="spacer layer1 bg-darkbgblue" />
+        <div className="spacer layer2 bg-darkbgblue" />
 
         <Footer />
       </section>
