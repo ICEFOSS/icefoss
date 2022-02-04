@@ -38,3 +38,21 @@
   }
 }
 
+/* svg space */
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .spacer{
+    aspect-ratio: 960/100;
+  }
+ }
+.layer1{
+  background-image: url('/public/assets/layered-peaks.svg');
+}
