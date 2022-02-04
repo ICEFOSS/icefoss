@@ -60,10 +60,10 @@ export function ContactSec() {
                 <div className="Venue m-2">
                     <h3 className="text-black text-lg md:text-xl font-normal underline underline-offset-4 pb-2">Mobile</h3>
                     <p className="max-w-xs mx-auto text-xs md:text-sm font-mono text-gray-900">
-                        Lorem :ipsum dolor
+                        Kajal : +91 90619 11103
                     </p>
                     <p className="max-w-xs mx-auto text-xs md:text-sm font-mono text-gray-900">
-                        Lorem :ipsum dolor
+                        Naveen : +91 86063 30293
                     </p>
                 </div>
             </div>
