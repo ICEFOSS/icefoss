@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class About extends Component {
     render() {
         return <>
-            <h2 className='text-5xl my-10 ml-10'>About</h2>
+            <h2 className='text-5xl my-10 ml-10' id='About'>About</h2>
             <AboutEachSection
                 imgSrc='/assets/fisat.webp'
                 title="FISAT"
