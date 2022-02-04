@@ -1,7 +1,7 @@
 import { Linkedin_svg, Twitter_svg, Instagram_svg, Facebook_svg } from "./constants"
 export default function Footer() {
     return (
-        <div className="from-lightbgblue to-blue-900 bg-gradient-to-b flex justify-center">
+        <div className="from-darkbgblue to-blue-900 bg-gradient-to-b flex justify-center">
             <footer className="text-center text-white bg-black bg-blend-hue bg-opacity-60 w-full flex justify-center pt-5">
                 <div className="container px-12 pt-6">
                     <div className="container h-[35rem] md:h-[32rem] pb-6 mx-auto flex flex-nowrap flex-col md:flex-row">
@@ -55,10 +55,10 @@ export default function Footer() {
 
 export function ContactSec() {
     return (
-        <div className=" flex flex-col md:flex-row flex-grow flex-wrap  md:mr-10 justify-center items-center  bg-blue-50 opacity-30 shadow-md shadow-black hover:shadow-lg transition-all duration-1000 hover:opacity-60  mt-8 rounded-lg px-5 content-center gap-3 gap-y-3 from-blue-300 to-green-400 bg-gradient-to-br hover:from-blue-300 hover:to-green-500 hover:bg-gradient-to-br">
-            <div className="flex flex-col md:flex-row flex-wrap justify-evenly shadow-md bg-opacity-30 shadow-gray-600  bg-blue-300 w-full mx-4 rounded-md">
+        <div className=" flex flex-col md:flex-row flex-grow flex-wrap  md:mr-10 justify-center items-center   transition-all opacity-40 duration-1000 hover:opacity-80  mt-8 rounded-lg px-5 content-center gap-3 gap-y-3 from-green-400 to-blue-300 bg-gradient-to-tl hover:from-green-400 hover:to-blue-300 hover:bg-gradient-to-tl">
+            <div className="flex flex-col md:flex-row flex-wrap justify-evenly bg-opacity-0 bg-blue-300 w-full mx-4 rounded-md">
                 <div className="Venue m-2">
-                    <h3 className=" text-lg md:text-xl font-bold underline underline-offset-4 pb-2 text-gray-800">Mobile</h3>
+                    <h3 className=" text-lg md:text-xl font-bold underline underline-offset-4 pb-2 text-gray-900">Mobile</h3>
                     <p className="max-w-xs mx-auto text-xs md:text-sm font-bold text-gray-800">
                         Kajal : +91 90619 11103
                     </p>
@@ -67,18 +67,18 @@ export function ContactSec() {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row flex-wrap justify-center text-center bg-opacity-30 shadow-md shadow-gray-600 bg-blue-300 w-full mx-4 rounded-md">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center text-center bg-opacity-0 bg-blue-300 w-full mx-4 rounded-md">
                 <div className="Venue m-2">
-                    <h3 className=" text-lg md:text-xl  font-bold underline underline-offset-4 pb-2 text-gray-800">Venue</h3>
+                    <h3 className=" text-lg md:text-xl  font-bold underline underline-offset-4 pb-2 text-gray-900">Venue</h3>
                     <p className="max-w-xs mx-auto text-xs md:text-sm font-bold text-gray-800 ">
                         Federal Institute of Science And Technology - Hormis Nagar, Mookkannoor, Angamaly, Kerala 683577
                     </p>
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row flex-wrap justify-center text-white bg-opacity-30  shadow-md shadow-gray-600  bg-blue-300 w-full mx-4 rounded-md">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center text-white bg-opacity-0  bg-blue-300 w-full mx-4 rounded-md">
                 <div className="Venue m-2">
-                    <h3 className=" text-lg md:text-xl  font-bold underline underline-offset-4 pb-2 text-gray-800">Email</h3>
+                    <h3 className=" text-lg md:text-xl  font-bold underline underline-offset-4 pb-2 text-gray-900">Email</h3>
                     <p className="max-w-lg mx-auto text-xs md:text-sm font-bold text-gray-800">
                         icefoss<span className=" font-serif">@</span>fisat.ac.in
                     </p>
