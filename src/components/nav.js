@@ -6,7 +6,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex justify-center">
-      <nav className=" bg-gray-900 fixed top-0 z-50 md:w-5/6 rounded-xl md:mt-3 md:mx-32 mt-3 w-11/12 mx-4 bg-opacity-90">
+      <nav className=" bg-gray-900 fixed top-0 z-50 w-[98%] rounded-xl md:mt-3 md:mx-32 mt-3 mx-4 bg-opacity-90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 ">
 
