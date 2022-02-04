@@ -1,13 +1,13 @@
 import { Linkedin_svg, Twitter_svg, Instagram_svg, Facebook_svg } from "./constants"
 export default function Footer() {
     return (
-        <div className="bg-blue-700 flex justify-center">
-            <footer className="text-center text-white bg-gray-900 bg-opacity-80 w-full flex justify-center pt-5">
+        <div className="from-lightbgblue to-blue-900 bg-gradient-to-b flex justify-center">
+            <footer className="text-center text-white bg-black bg-blend-hue bg-opacity-60 w-full flex justify-center pt-5">
                 <div className="container px-6 pt-6">
                     <div className="container px-8 h-[35rem] h- md:h-[32rem] pb-6 mx-auto flex flex-nowrap flex-col md:flex-row">
 
                         <ContactSec />
-                        <div className="w-full mt-8 bg-gray-100 opacity-70 rounded-lg overflow-hidden p-1 flex relative grayscale">
+                        <div className="w-full mt-8 bg-gray-100 opacity-70 rounded-lg overflow-hidden p-1 flex relative ">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3671449790004!2d76.40663386471358!3d10.23194389269231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1643976276450!5m2!1sen!2sin" width="100%" height="100%" frameBorder="0" loading="lazy"></iframe>
 
                         </div>
@@ -56,7 +56,7 @@ export default function Footer() {
 export function ContactSec() {
     return (
         <div className=" flex flex-col md:flex-row flex-grow flex-wrap  md:mr-10 justify-center items-center  bg-gray-50 bg-opacity-70 mt-8 rounded-lg px-5 content-center gap-3 ">
-            <div className="flex flex-col md:flex-row flex-wrap justify-center shadow-sm bg-gray-300 shadow-gray-600 w-full mx-4 rounded-md">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center shadow-sm bg-gray-500 bg-opacity-60 shadow-gray-600 w-full mx-4 rounded-md">
                 <div className="Venue m-2">
                     <h3 className="text-black text-lg md:text-xl font-normal underline underline-offset-4 pb-2">Mobile</h3>
                     <p className="max-w-xs mx-auto text-xs md:text-sm font-mono text-gray-900">
@@ -67,7 +67,7 @@ export function ContactSec() {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row flex-wrap justify-center text-center  bg-gray-300  shadow-sm shadow-gray-600 w-full mx-4 rounded-md">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center text-center  bg-gray-500 bg-opacity-60 shadow-sm shadow-gray-600 w-full mx-4 rounded-md">
                 <div className="Venue m-2">
                     <h3 className="text-black text-lg md:text-xl  font-normal underline underline-offset-4 pb-2">Venue</h3>
                     <p className="max-w-xs mx-auto text-xs md:text-sm font-normal text-gray-900">
@@ -76,7 +76,7 @@ export function ContactSec() {
                 </div>
             </div>
 
-            <div className="flex flex-col md:flex-row flex-wrap justify-center bg-gray-300  shadow-sm shadow-gray-600 w-full mx-4 rounded-md">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center  bg-gray-500 bg-opacity-60  shadow-sm shadow-gray-600 w-full mx-4 rounded-md">
                 <div className="Venue m-2">
                     <h3 className="text-black text-lg md:text-xl  font-normal underline underline-offset-4 pb-2">Email</h3>
                     <p className="max-w-lg mx-auto text-xs md:text-sm font-normal text-gray-900">
