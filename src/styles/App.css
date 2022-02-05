@@ -46,13 +46,15 @@
   background-position: center;
   background-size: cover;
 }
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .spacer{
-    aspect-ratio: 960/100;
-  }
- }
 .layer1{
   background-image: url('/public/assets/layered-peaks.svg');
 }
+.layer2{
+  background-image: url('/public/assets/wave2-lg.svg');
+}
+
+@media only screen and (min-width: 768px) {
+  .spacer{
+    aspect-ratio: 900/100;
+  }
+ }
