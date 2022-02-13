@@ -7,9 +7,9 @@ export default function Speaker() {
 
                 <h2 className='text-5xl my-10 text-sky-200 text-center'>Speakers</h2>
 
-                <div className="w-full ">
+                <div className="w-full">
                     <div className="my-6">
-                        <div className="w-fit mx-auto bg-sky-200 text-blue-500 text-xl px-10 sm:px-20 lg:px-28 py-1 rounded-3xl opacity-70 shadow-sm shadow-blue-900 mt-20 mb-4">Guest Speaker</div>
+                        <div className="w-fit mx-auto bg-white bg-opacity-30 text-darkbgblue text-xl px-10 py-1 rounded-lg shadow-sm shadow-blue-900 mt-20 mb-4 hover:bg-opacity-70 transition-all duration-500">Guest Speaker</div>
                         <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-4 py-8">
                             <div className="flex flex-wrap flex-row justify-evenly gap-6 lg:mx-20 xl:mx-32">
                                 <Speaker_card
@@ -26,7 +26,7 @@ export default function Speaker() {
                         </section >
                     </div>
                     <div>
-                        <div className="w-fit mx-auto bg-sky-200 text-blue-500 text-xl px-10 sm:px-20 lg:px-28 py-1 rounded-3xl opacity-70 shadow-sm shadow-blue-900 mt-20 mb-4">Other Speaker's</div>
+                        <div className="w-fit mx-auto bg-white bg-opacity-30 text-darkbgblue text-xl px-10 py-1 rounded-lg shadow-sm shadow-blue-900 mt-20 mb-4 hover:bg-opacity-70 transition-all duration-500">Other Speaker's</div>
                         <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-4  py-8">
                             <div className="flex flex-wrap flex-row justify-center gap-8  lg:mx-20 xl:mx-32">
                                 <Speaker_card
@@ -69,13 +69,13 @@ export default function Speaker() {
 export function Speaker_card(props) {
     return (
         <>
-            <div className="max-w-sm  hover:bg-sky-100  hover:bg-opacity-50 rounded-2xl  my-1 mx-1 w-80 sm:w-64  transition-all duration-1000 hover:shadow-xl bg-black bg-opacity-5 shadow-md shadow-black hover:shadow-gray-700">
+            <div className="max-w-sm border-[1px] border-sky-600 hover:bg-slate-100  hover:bg-opacity-20 rounded-sm hover:rounded-xl my-1 mx-1 w-80 sm:w-64  transition-all duration-1000 hover:shadow-lg bg-black bg-opacity-5 shadow-md shadow-black hover:shadow-gray-700 group">
                 <div className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-2 self-center">
-                    <img className="my-3 w-40 md:w-40 rounded-full  shadow-gray-700 shadow-sm transition-shadow duration-700 hover:shadow-xl hover:shadow-gray-700 mx-auto" src={props.profile_img} alt="Bonnie image" />
+                    <img className="my-3 w-40 md:w-40 rounded-md  shadow-gray-700 shadow-sm transition-shadow duration-700 hover:shadow-xl hover:shadow-gray-700 mx-auto" src={props.profile_img} alt="Bonnie image" />
                     <h3 className="text-3xl font-medium text-gray-900 text-center">{props.name}</h3>
                     <h4 className="text-lg text-gray-900 text-center">{props.designation}</h4>
                 </div>
-                <p className="flex flex-wrap flex-row justify-center pb-0 ">
+                <p className="flex flex-wrap flex-row justify-center pb-0 bg-black bg-opacity-10 group-hover:bg-white group-hover:bg-opacity-40 transition-all duration-100">
                     <Linkedin_svg />
                     <p className="mx-2" />
                     <Twitter_svg />
