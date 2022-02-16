@@ -11,6 +11,7 @@ export default class About extends Component {
                     {/* <div className="flex flex-wrap -mx-4 -mb-10 text-center"> */}
                     <div className=" flex flex-wrap flex-row justify-center gap-8">
                         <AboutEachSection
+                            href="https://fisat.ac.in/"
                             imgSrc='/assets/fisat.png'
                             title="FISAT"
                             desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eius omnis libero excepturi odit pariatur, unde, expedita repudiandae dolorem sunt, harum architecto modi! Nam exercitationem aliquid architecto corrupti, iure vitae!"
@@ -22,6 +23,7 @@ export default class About extends Component {
                             desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eius omnis libero excepturi odit pariatur, unde, expedita repudiandae dolorem sunt, harum architecto modi! Nam exercitationem aliquid architecto corrupti, iure vitae!"
                         />
                         <AboutEachSection
+                            href="http://hackfit.fisat.ac.in/"
                             imgSrc='/assets/hackfit.png'
                             title="Hackfit"
                             desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eius omnis libero excepturi odit pariatur, unde, expedita repudiandae dolorem sunt, harum architecto modi! Nam exercitationem aliquid architecto corrupti, iure vitae!"
@@ -34,7 +36,7 @@ export default class About extends Component {
 }
 
 export function AboutEachSection(props) {
-    const aboutStyle = `w-fit rounded-md px-3 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-opacity-0 ${props.hide}`
+    const aboutStyle = `w-fit px-3 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-opacity-0 ${props.hide}`
     return (
 
         <div className="max-w-xs overflow-hidden  flex flex-col justify-start rounded-lg shadow-xl hover:shadow-xl group">
@@ -48,7 +50,7 @@ export function AboutEachSection(props) {
                 </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-                <span className=" flex justify-end"><button className={aboutStyle}>website</button></span>
+                <span className=" flex justify-end"><a href={props.href} target="_blank" role="button" className={aboutStyle}>website</a></span>
             </div>
         </div>
     )
