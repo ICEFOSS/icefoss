@@ -13,6 +13,7 @@ export default function Speaker() {
                         <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-4 py-8">
                             <div className="flex flex-wrap flex-row justify-evenly gap-6 lg:mx-20 xl:mx-32">
                                 <Speaker_card
+                                    id="1"
                                     profile_img="/assets/speaker1.jpg"
                                     alt="Lentin Joseph"
                                     linkedin="https://www.linkedin.com/in/lentinjoseph/"
@@ -25,6 +26,7 @@ export default function Speaker() {
                                     session_link=""
                                 />
                                 <Speaker_card
+                                    id="2"
                                     profile_img="/assets/speaker2.jpg"
                                     alt="Sreehari C P"
                                     linkedin="https://in.linkedin.com/in/sreehari-c-p"
@@ -83,7 +85,7 @@ export default function Speaker() {
 
 export function Speaker_card(props) {
     return (
-        <>
+        <a href={`#workshop${props.id}`}>
             <div className="max-w-sm border-[1px] border-sky-600 hover:bg-slate-100  hover:bg-opacity-20 rounded-sm hover:rounded-xl my-1 mx-1 w-80 sm:w-64  transition-all duration-1000 hover:shadow-lg bg-black bg-opacity-5 shadow-md shadow-black hover:shadow-gray-700 group flex flex-col justify-around">
                 <div className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-2 self-center">
                     <img className="my-3 w-40 md:w-40 rounded-md  shadow-gray-700 shadow-sm transition-shadow duration-700 hover:shadow-xl hover:shadow-gray-700 mx-auto mt-full h-fit" src={props.profile_img} alt="Bonnie image" />
@@ -125,6 +127,6 @@ export function Speaker_card(props) {
                     }
                 </p>
             </div>
-        </>
+        </a>
     );
 }

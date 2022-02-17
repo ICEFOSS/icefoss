@@ -8,7 +8,7 @@ export default class Workshop extends Component {
         <h2 className="text-5xl mb-20 text-sky-200 flex justify-center">Workshops</h2>
         <div className="flex flex-row flex-wrap justify-center gap-3">
           <WorkshopEachSection
-            id='0'
+            id='1'
             title="Robot Operating System (ROS)"
             description={`
             <br>            
@@ -35,7 +35,7 @@ export default class Workshop extends Component {
           />
 
           <WorkshopEachSection
-            id='1'
+            id='2'
             title="Cyber Security and Ethical Hacking"
             description={`
             <br>            
@@ -57,7 +57,7 @@ function WorkshopEachSection(props) {
 
   return (
     <>
-      <div className="my-1 px-1 md:p-2 w-full sm:w-10/12 md:w-7/12 lg:w-5/12">
+      <div id={`workshop${props.id}`} className="my-1 px-1 md:p-2 w-full sm:w-10/12 md:w-7/12 lg:w-5/12">
         <div className="relative block group h-[22rem] active:h-[22rem] hover:h-[22rem] focus:h-[22rem] md:h-[24rem] md:hover:h-[24rem]">
 
           <div className="relative flex items-end h-full transform overflow-hidden group-hover:overflow-y-scroll bg-black bg-opacity-10 shadow-md shadow-black  rounded-xl transition-all duration-1000">
