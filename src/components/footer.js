@@ -35,11 +35,11 @@ export default function Footer() {
                         </div>
                         <div className="text-center text-xs md:text-sm bg container px-6 mt-3 py-4 font-sans w-full">
                             Created & designed
-                            <span> Amarjith Raj, </span>
-                            <span> Aparna Joshi, </span>
-                            <span> Ashmi Subramanian </span>
+                            <a href="https://www.linkedin.com/in/amarjith-raj-b2822a196" target="_blank"> Amarjith Raj, </a>
+                            <a href="https://www.linkedin.com/in/aparna-joshi-9b8a89225" target="_blank"> Aparna Joshi, </a>
+                            <a href="https://www.linkedin.com/in/ashmi-subramanian-09078822a" target="_blank"> Ashmi Subramanian </a>
                             &amp;
-                            <span> Joel Nickson </span>
+                            <a href="https://www.linkedin.com/in/joel-nickson-0a27721a5/" target="_blank"> Joel Nickson </a>
                             <br></br>
                             <div className="my-6">
                                 <span className=" font-serif">&copy;</span> 2022 Icefoss

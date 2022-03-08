@@ -14,19 +14,19 @@ export default class About extends Component {
                             href="https://fisat.ac.in/"
                             imgSrc='/assets/fisat.png'
                             title="FISAT"
-                            desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eius omnis libero excepturi odit pariatur, unde, expedita repudiandae dolorem sunt, harum architecto modi! Nam exercitationem aliquid architecto corrupti, iure vitae!"
+                            desc="Federal Institute of Science And Technology (FISAT) was established in 2002 under the aegis of Federal Bank Officers' Association Educational Society (FBOAES). The college has carved a niche for itself in education world, eloquently demonstrated by the flying colors attained by its students in academics, placements as well as in extra curricular and co-curricular activities."
                         />
                         <AboutEachSection
                             imgSrc='/assets/ffsc.png'
                             title="FFSC"
                             hide='hidden'
-                            desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eius omnis libero excepturi odit pariatur, unde, expedita repudiandae dolorem sunt, harum architecto modi! Nam exercitationem aliquid architecto corrupti, iure vitae!"
+                            desc="The FISAT Free Software Cell (FFSC), established in 2006, is dedicated to promote computer users` rights to use, study, copy, modify, and redistribute computer programs. The FFSC promotes the developmentand use of free software, particularly the GNU operating system, used widely in its GNU/Linux variant. The Free Software Cell is one of the most active student organisations operating in FISAT. FFSC now conducts classes in the GNU/Linux operating system, kernel programming and Web application development."
                         />
                         <AboutEachSection
                             href="http://hackfit.fisat.ac.in/"
                             imgSrc='/assets/hackfit.png'
                             title="Hackfit"
-                            desc="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta eius omnis libero excepturi odit pariatur, unde, expedita repudiandae dolorem sunt, harum architecto modi! Nam exercitationem aliquid architecto corrupti, iure vitae!"
+                            desc="HACKFIT is a 36-hour Hackathon conducted as part of ICEFOSS 2022 commencing from the 28th of April 2022 to the 30th of April 2022. Participants can enter the competition individually or as a team of not more than 5 members. The Hackathon will have 2 rounds with round 1 being exclusively online. Qualifiers of the first round will be assigned a mentor to progress to the second round. The winning team along with the 2 runners up teams will be offered an opportunity to connect with some of our leading industry partners."
                         />
                     </div>
                 </div>
