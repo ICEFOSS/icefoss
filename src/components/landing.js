@@ -22,7 +22,7 @@ export default function Landing() {
               <span className="text-gray-100">28TH - 30TH APR 2022</span>
             </h1>
             <p className="text-lg max-w-md text-gray-800">
-            ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiast's and others. ICEFOSS 2022, scheduled on April 28th-30th is the 12th edition of this conference. 
+              ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiast's and others. ICEFOSS 2022, scheduled on April 28th-30th is the 12th edition of this conference.
             </p>
             <div className="flex flex-col md:flex-row gap-x-3">
               <button className="inline-block mt-10 px-10 py-3 bg-gray-800 text-lg text-white rounded-md">

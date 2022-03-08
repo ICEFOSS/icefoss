@@ -38,9 +38,8 @@ export default class About extends Component {
 export function AboutEachSection(props) {
     const aboutStyle = `w-fit px-3 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-opacity-0 ${props.hide}`
     return (
-
         <div className="max-w-xs overflow-hidden  flex flex-col justify-start rounded-lg shadow-xl hover:shadow-xl group">
-            <div className='group-hover:-translate-y-1 transform bg-gray-700 bg-opacity-0 group-hover:bg-opacity-5 shadow-sm group-hover:shadow-lg group-hover:shadow-sky-700 shadow-sky-900  rounded-lg transition-all duration-100 w-full mx-auto border-[1px] border-sky-600'>
+            <div className='group-hover:-translate-y-1 transform bg-[#168bbe] bg-opacity-0 group-hover:bg-opacity-5 shadow-sm group-hover:shadow-lg group-hover:shadow-sky-700 shadow-sky-900  rounded-lg transition-all duration-100 w-full mx-auto border-[1px] border-sky-600'>
                 <img className="w-full" src={props.imgSrc} alt="Forest" />
             </div>
             <div className="px-6 py-4">
@@ -49,8 +48,10 @@ export function AboutEachSection(props) {
                     {props.desc}
                 </p>
             </div>
-            <div className="px-6 pt-4 pb-2">
-                <span className=" flex justify-end"><a href={props.href} target="_blank" role="button" className={aboutStyle}>website</a></span>
+            <div className="px-6 pt-1 pb-2 h-full flex justify-end items-end">
+                <span className=" ">
+                    <a href={props.href} target="_blank" role="button" className={aboutStyle} rel="noreferrer">website</a>
+                </span>
             </div>
         </div>
     )
