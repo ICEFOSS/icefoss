@@ -6,6 +6,7 @@ import Nav from './components/nav';
 import Workshop from './components/workshops';
 import "./styles/App.css";
 import Footer from './components/footer';
+import LazyLoad from 'react-lazyload';
 
 function App() {
   let lastScroll = 0;
@@ -23,34 +24,40 @@ function App() {
     <>
 
       <section className='text-white w-fit sm:w-full'>
-        <section id='nav'>
+        <section id='nav'><LazyLoad height={300} offset={300} once>
           <Nav />
+        </LazyLoad>
         </section>
-        <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
-          id='Landing'>
-          <Landing />
-        </section>
-        <div className="spacer layer1 bg-darkbgblue" />
-
-        <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
-          id='About'>
-          <About />
+        <section className='px-10 from-darkbgblue via-[#1ca2fc] to-lightbgblue bg-gradient-to-t'
+          id='Landing'><LazyLoad height={300} offset={300} once>
+            <Landing />
+          </LazyLoad>
         </section>
         <div className="spacer layer1 bg-darkbgblue" />
 
         <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
-          id='Speakers'>
-          <Speaker />
+          id='About'><LazyLoad height={300} offset={300} once>
+            <About />
+          </LazyLoad>
+        </section>
+        <div className="spacer layer1 bg-darkbgblue" />
+
+        <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
+          id='Speakers'><LazyLoad height={300} offset={300} once>
+            <Speaker />
+          </LazyLoad>
         </section>
         <div className="spacer layer1 bg-darkbgblue" />
 
         <section className='text-gray-800 px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
-          id='Workshops'>
-          <Workshop />
+          id='Workshops'><LazyLoad height={300} offset={300} once>
+            <Workshop />
+          </LazyLoad>
         </section>
         <div className="spacer layer2 bg-darkbgblue" />
-
-        <Footer />
+        <LazyLoad height={300} offset={300} once>
+          <Footer />
+        </LazyLoad>
       </section>
     </>
   );

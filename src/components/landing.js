@@ -1,19 +1,13 @@
+import LazyLoad from 'react-lazyload';
 import '../styles/snowfall.css';
 import Snowfall from './snowfall';
 
-// export function Snow(){
-//   let snowArray =[]
-//   return(
-//     for (let i = 0; i < 400; i++) {
-//       snowArray;
-
-//     }
-//   )
-// } 
 export default function Landing() {
   return (
     <>
-      <Snowfall />
+      <LazyLoad height={300} offset={300} once>
+        <Snowfall />
+      </LazyLoad>
       <section className="ml-0  duration-200 h-fit" id="Landing">
         <div className="bg-bgblue animate-[wiggle_90s_scroll_infinite_linear] h-screen flex justify-items-center items-center md:justify-center lg:justify-start">
           <div className="px-2  mt-36  lg:pl-44">

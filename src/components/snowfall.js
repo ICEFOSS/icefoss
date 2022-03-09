@@ -1,3 +1,5 @@
+import '../styles/snowfall.css';
+
 export default function Snowfall() {
     return (
         <div>
