@@ -3,7 +3,7 @@ export default function Speaker() {
     return (
 
         <>
-            <div className="py-40" id="Speakers">
+            <div className="py-10" id="Speakers">
 
                 <h2 className='text-5xl my-10 text-gray-100 text-center'>Speakers</h2>
 
