@@ -35,21 +35,21 @@ function App() {
         </section>
         <div className="spacer layer1 bg-darkbgblue" />
 
-        <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
+        <section className='px-10 from-darkbgblue via-[#1ca2fc]  to-lightbgblue bg-gradient-to-t'
           id='About'><LazyLoad height={300} offset={300} once>
             <About />
           </LazyLoad>
         </section>
         <div className="spacer layer1 bg-darkbgblue" />
 
-        <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
+        <section className='px-10 from-darkbgblue via-[#1ca2fc]  to-lightbgblue bg-gradient-to-t'
           id='Speakers'><LazyLoad height={300} offset={300} once>
             <Speaker />
           </LazyLoad>
         </section>
         <div className="spacer layer1 bg-darkbgblue" />
 
-        <section className='text-gray-800 px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
+        <section className='text-gray-800 px-10 via-[#1ca2fc]  from-darkbgblue to-lightbgblue bg-gradient-to-t'
           id='Workshops'><LazyLoad height={300} offset={300} once>
             <Workshop />
           </LazyLoad>

@@ -1,5 +1,4 @@
 import LazyLoad from 'react-lazyload';
-import '../styles/snowfall.css';
 import Snowfall from './snowfall';
 
 export default function Landing() {

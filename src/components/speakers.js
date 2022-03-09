@@ -86,7 +86,7 @@ export default function Speaker() {
 export function SpeakerCard(props) {
     return (
         <a href={`#workshop${props.id}`}>
-            <div className="max-w-sm border-[1px] border-sky-600 hover:bg-slate-100  hover:bg-opacity-20 rounded-sm hover:rounded-none my-1 mx-1 w-80 sm:w-64  transition-all duration-1000 hover:shadow-lg from-lightbgblue to-[#0f84b6] bg-gradient-to-t shadow-md shadow-black hover:shadow-gray-700 group flex flex-col justify-around">
+            <div className="max-w-sm border-[1px] border-sky-600 hover:bg-slate-100  hover:bg-opacity-20 rounded-sm hover:rounded-none my-1 mx-1 w-80 sm:w-64  transition-all duration-1000 hover:shadow-lg to-[#0f84b6] from-[#1ca2fc]   bg-gradient-to-t shadow-md shadow-black hover:shadow-gray-700 group flex flex-col justify-around">
                 <div className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-2 self-center">
                     <img className="my-3 w-40 md:w-40 rounded-md  shadow-gray-700 shadow-sm transition-shadow duration-700 hover:shadow-xl hover:shadow-gray-700 mx-auto mt-full h-fit" src={props.profile_img} alt={props.alt} />
                     <h3 className="text-3xl font-medium text-gray-900 text-center">{props.name}</h3>
