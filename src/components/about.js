@@ -38,8 +38,8 @@ export default class About extends Component {
 export function AboutEachSection(props) {
     const aboutStyle = `w-fit px-3 text-sm font-semibold text-black mr-2 mb-2 bg-opacity-0`
     return (
-        <div className="max-w-sm overflow-hidden  flex flex-col justify-start from-[#1ca2fc] to-[#255c80] bg-gradient-to-t rounded-lg shadow-xl hover:shadow-xl group">
-            <div className='group-hover:-translate-y-1 transform from-[#33c0fd] to-[#0071a2] bg-gradient-to-b  group-hover:bg-opacity-5 shadow-sm group-hover:shadow-lg group-hover:shadow-sky-700 shadow-sky-900  rounded-lg transition-all duration-100 w-full mx-auto border-[1px] border-sky-600'>
+        <div className="max-w-sm overflow-hidden  flex flex-col justify-start from-[#1ca2fc] via-[#1ca2fc] to-[#255c80] bg-gradient-to-t rounded-lg shadow-xl hover:shadow-xl group">
+            <div className='group-hover:-translate-y-1 transform from-[#33c0fd] via-[#1ca2fc] to-[#0071a2] bg-gradient-to-b  group-hover:bg-opacity-5 shadow-sm group-hover:shadow-lg group-hover:shadow-sky-700 shadow-sky-900  rounded-lg transition-all duration-100 w-full mx-auto border-[1px] border-sky-600'>
                 <img className="w-full" src={props.imgSrc} alt="Forest" />
             </div>
             <div className="px-6 py-4">
