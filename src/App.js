@@ -22,7 +22,7 @@ function App() {
   return (
     <>
 
-      <section className='text-white'>
+      <section className='text-white w-fit sm:w-full'>
         <section id='nav'>
           <Nav />
         </section>

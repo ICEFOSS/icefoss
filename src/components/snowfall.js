@@ -1,6 +1,6 @@
 export default function Snowfall() {
     return (
-        <>
+        <div>
             <div className="snow"></div>
             <div className="snow"></div>
             <div className="snow"></div>
@@ -201,6 +201,6 @@ export default function Snowfall() {
             <div className="snow"></div>
             <div className="snow"></div>
             <div className="snow"></div>
-        </>
+        </div>
     )
 }
