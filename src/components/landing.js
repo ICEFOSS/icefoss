@@ -25,12 +25,17 @@ export default function Landing() {
               ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiast's and others. ICEFOSS 2022, scheduled on April 28th-30th is the 12th edition of this conference.
             </p>
             <div className="flex flex-wrap flex-col md:flex-row gap-x-3">
-              <button className="inline-block mt-10 px-10 py-3 bg-gray-800 text-lg text-white rounded-md">
-                REGISTER NOW
-              </button>
-              <button className="inline-block mt-10 px-10 py-3 bg-gray-800 text-lg text-white rounded-md">
-               <a href="http://hackfit.fisat.ac.in/"> HACKFIT</a>
-              </button>
+              <a href='#Workshops'>
+                <button className="inline-block mt-10 px-10 py-3 bg-gray-800 text-lg text-white rounded-md">
+                  REGISTER NOW
+                </button>
+              </a>
+
+              <a href="http://hackfit.fisat.ac.in/">
+                <button className="inline-block mt-10 px-10 py-3 bg-gray-800 text-lg text-white rounded-md">
+                  HACKFIT
+                </button>
+              </a>
             </div>
           </div>
 
