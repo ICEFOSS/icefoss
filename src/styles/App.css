@@ -47,6 +47,7 @@
   background-size: cover;
 }
 .layer1{
+  background-color: #0f95ee;
   background-image: url('/public/assets/wave1.svg');
 }
 .layer2{
