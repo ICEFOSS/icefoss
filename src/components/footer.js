@@ -55,7 +55,7 @@ export default function Footer() {
 
 export function ContactSec() {
     return (
-        <div className=" flex flex-col md:flex-row flex-grow flex-wrap  md:mr-10 justify-center items-center   transition-all opacity-60 duration-500 hover:opacity-90  mt-8 rounded-lg px-5 content-center gap-3 gap-y-3 from-[#0a3a60] to-[#0b2244] bg-gradient-to-t" >
+        <div className=" flex flex-col md:flex-row flex-grow flex-wrap  md:mr-10 justify-center items-center   transition-all opacity-60 duration-500 hover:opacity-90  mt-8 rounded-lg px-5 content-center gap-3 gap-y-3 from-[#0a3a60] to-[#091e3a] bg-gradient-to-t" >
             <div className="flex flex-col md:flex-row flex-wrap justify-evenly bg-opacity-0 bg-blue-300 w-full mx-4 rounded-md">
                 <div className="Venue m-2">
                     <h3 className=" text-lg md:text-xl font-bold underline underline-offset-4 pb-2 text-gray-50">Mobile</h3>

@@ -26,25 +26,25 @@ function App() {
         <section id='nav'>
           <Nav />
         </section>
-        <section className='px-10 to-lightbgblue from-darkbgblue bg-gradient-to-t'
+        <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
           id='Landing'>
           <Landing />
         </section>
         <div className="spacer layer1 bg-darkbgblue" />
 
-        <section className='px-10 to-lightbgblue from-darkbgblue bg-gradient-to-t'
+        <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
           id='About'>
           <About />
         </section>
         <div className="spacer layer1 bg-darkbgblue" />
 
-        <section className='px-10 to-lightbgblue from-darkbgblue bg-gradient-to-t'
+        <section className='px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
           id='Speakers'>
           <Speaker />
         </section>
         <div className="spacer layer1 bg-darkbgblue" />
 
-        <section className='text-gray-800 px-10 to-lightbgblue from-darkbgblue bg-gradient-to-t'
+        <section className='text-gray-800 px-10 from-darkbgblue to-lightbgblue bg-gradient-to-t'
           id='Workshops'>
           <Workshop />
         </section>
