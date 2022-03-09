@@ -5,11 +5,11 @@ export default class About extends Component {
         return (
             // <div className="py-40">
             //     <h2 className='text-5xl text-center' id='About'>About</h2>
-            <section className="text-gray-200">
+            <section className="text-gray-100">
                 <div className="sm:px-5 py-24 w-full">
                     <h2 className='text-5xl text-center mb-10' id='About'>About</h2>
                     {/* <div className="flex flex-wrap -mx-4 -mb-10 text-center"> */}
-                    <div className=" flex flex-wrap flex-row justify-center gap-8">
+                    <div className=" flex flex-wrap flex-row justify-center gap-8 text-sky-200">
                         <AboutEachSection
                             href="https://fisat.ac.in/"
                             imgSrc='/assets/fisat.png'
@@ -36,7 +36,7 @@ export default class About extends Component {
 }
 
 export function AboutEachSection(props) {
-    const aboutStyle = `w-fit px-3 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-opacity-0 ${props.hide}`
+    const aboutStyle = `w-fit px-3 text-sm font-semibold text-black mr-2 mb-2 bg-opacity-0 ${props.hide}`
     return (
         <div className="max-w-xs overflow-hidden  flex flex-col justify-start rounded-lg shadow-xl hover:shadow-xl group">
             <div className='group-hover:-translate-y-1 transform bg-[#168bbe] bg-opacity-0 group-hover:bg-opacity-5 shadow-sm group-hover:shadow-lg group-hover:shadow-sky-700 shadow-sky-900  rounded-lg transition-all duration-100 w-full mx-auto border-[1px] border-sky-600'>

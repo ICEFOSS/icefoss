@@ -5,7 +5,7 @@ export default function Speaker() {
         <>
             <div className="py-40" id="Speakers">
 
-                <h2 className='text-5xl my-10 text-sky-200 text-center'>Speakers</h2>
+                <h2 className='text-5xl my-10 text-gray-100 text-center'>Speakers</h2>
 
                 <div className="w-full">
                     <div className="my-6">
