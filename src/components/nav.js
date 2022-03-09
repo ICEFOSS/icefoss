@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-import { Ffsc_svg } from "./constants";
+import { FfscSvg } from "./constants";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ function Nav() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 ">
             <div className="flex-shrink-0">
-              <Ffsc_svg />
+              <FfscSvg />
             </div>
             <div className="flex items-center">
               <div className="hidden md:block ">

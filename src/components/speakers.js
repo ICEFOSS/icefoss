@@ -1,4 +1,4 @@
-import { Twitter_svg, Github_svg, Linkedin_svg, Instagram_svg } from "./constants";
+import { TwitterSvg, LinkedinSvg, InstagramSvg } from "./constants";
 export default function Speaker() {
     return (
 
@@ -12,7 +12,7 @@ export default function Speaker() {
                         {/* <div className="w-fit mx-auto bg-white bg-opacity-30 text-darkbgblue text-xl px-10 py-1 rounded-lg shadow-sm shadow-blue-900 mt-20 mb-4 hover:bg-opacity-70 transition-all duration-500">Guest Speaker</div> */}
                         <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-4 py-8">
                             <div className="flex flex-wrap flex-row justify-evenly gap-6 lg:mx-20 xl:mx-32">
-                                <Speaker_card
+                                <SpeakerCard
                                     id="1"
                                     profile_img="/assets/speaker1.jpg"
                                     alt="Lentin Joseph"
@@ -25,7 +25,7 @@ export default function Speaker() {
                                     time=""
                                     session_link=""
                                 />
-                                <Speaker_card
+                                <SpeakerCard
                                     id="2"
                                     profile_img="/assets/speaker2.jpg"
                                     alt="Sreehari C P"
@@ -46,7 +46,7 @@ export default function Speaker() {
                         <div className="w-fit mx-auto bg-white bg-opacity-30 text-darkbgblue text-xl px-10 py-1 rounded-lg shadow-sm shadow-blue-900 mt-20 mb-4 hover:bg-opacity-70 transition-all duration-500">Other Speaker's</div>
                         <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-4  py-8">
                             <div className="flex flex-wrap flex-row justify-center gap-8  lg:mx-20 xl:mx-32">
-                                <Speaker_card
+                                <SpeakerCard
                                     profile_img="https://th.bing.com/th/id/OIP.9KLizG3BPrxus1rmPG9jcAHaG1?w=236&h=218&c=7&r=0&o=5&dpr=1.25&pid=1.7"
                                     name=""
                                     designation=""
@@ -55,7 +55,7 @@ export default function Speaker() {
                                     time=""
                                     session_link=""
                                 />
-                                <Speaker_card
+                                <SpeakerCard
                                     profile_img="https://th.bing.com/th/id/OIP.9KLizG3BPrxus1rmPG9jcAHaG1?w=236&h=218&c=7&r=0&o=5&dpr=1.25&pid=1.7"
                                     name=""
                                     designation=""
@@ -64,7 +64,7 @@ export default function Speaker() {
                                     time=""
                                     session_link=""
                                 />
-                                <Speaker_card
+                                <SpeakerCard
                                     profile_img="https://th.bing.com/th/id/OIP.9KLizG3BPrxus1rmPG9jcAHaG1?w=236&h=218&c=7&r=0&o=5&dpr=1.25&pid=1.7"
                                     name=""
                                     designation=""
@@ -83,7 +83,7 @@ export default function Speaker() {
     );
 }
 
-export function Speaker_card(props) {
+export function SpeakerCard(props) {
     return (
         <a href={`#workshop${props.id}`}>
             <div className="max-w-sm border-[1px] border-sky-600 hover:bg-slate-100  hover:bg-opacity-20 rounded-sm hover:rounded-none my-1 mx-1 w-80 sm:w-64  transition-all duration-1000 hover:shadow-lg from-lightbgblue to-darkbgblue bg-gradient-to-t shadow-md shadow-black hover:shadow-gray-700 group flex flex-col justify-around">
@@ -99,7 +99,7 @@ export function Speaker_card(props) {
 
                             <p className="mx-2" >
                                 <a href={props.linkedin} target="_blank" role="button" rel="noreferrer">
-                                    <Linkedin_svg />
+                                    <LinkedinSvg />
                                 </a>
                             </p>
                             : ""
@@ -109,7 +109,7 @@ export function Speaker_card(props) {
                         (props.twitter !== "" ?
                             <p className="mx-2" >
                                 <a href={props.twitter} target="_blank" role="button" rel="noreferrer">
-                                    <Twitter_svg />
+                                    <TwitterSvg />
                                 </a>
                             </p>
                             : ""
@@ -119,7 +119,7 @@ export function Speaker_card(props) {
                         (props.insta !== "" ?
                             <p className="mx-2">
                                 <a href={props.insta} target="_blank" role="button" rel="noreferrer">
-                                    <Instagram_svg />
+                                    <InstagramSvg />
                                 </a>
                             </p>
                             : ""
