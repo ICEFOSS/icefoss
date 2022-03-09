@@ -86,19 +86,19 @@ export default function Speaker() {
 export function Speaker_card(props) {
     return (
         <a href={`#workshop${props.id}`}>
-            <div className="max-w-sm border-[1px] border-sky-600 hover:bg-slate-100  hover:bg-opacity-20 rounded-sm hover:rounded-xl my-1 mx-1 w-80 sm:w-64  transition-all duration-1000 hover:shadow-lg bg-black bg-opacity-5 shadow-md shadow-black hover:shadow-gray-700 group flex flex-col justify-around">
+            <div className="max-w-sm border-[1px] border-sky-600 hover:bg-slate-100  hover:bg-opacity-20 rounded-sm hover:rounded-none my-1 mx-1 w-80 sm:w-64  transition-all duration-1000 hover:shadow-lg from-lightbgblue to-darkbgblue bg-gradient-to-t shadow-md shadow-black hover:shadow-gray-700 group flex flex-col justify-around">
                 <div className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-2 self-center">
-                    <img className="my-3 w-40 md:w-40 rounded-md  shadow-gray-700 shadow-sm transition-shadow duration-700 hover:shadow-xl hover:shadow-gray-700 mx-auto mt-full h-fit" src={props.profile_img} alt="Bonnie image" />
+                    <img className="my-3 w-40 md:w-40 rounded-md  shadow-gray-700 shadow-sm transition-shadow duration-700 hover:shadow-xl hover:shadow-gray-700 mx-auto mt-full h-fit" src={props.profile_img} alt={props.alt} />
                     <h3 className="text-3xl font-medium text-gray-900 text-center">{props.name}</h3>
                     <h4 className="text-lg text-gray-900 text-center">{props.designation}</h4>
                 </div>
-                <p className="flex flex-wrap flex-row justify-center align-bottom pb-0 bg-black bg-opacity-10 group-hover:bg-white group-hover:bg-opacity-40 transition-all duration-100">
+                <p className="flex flex-wrap flex-row justify-center align-bottom pb-0 bg-black bg-opacity-30 group-hover:bg-white group-hover:bg-opacity-30 transition-all duration-100">
 
                     {
-                        (props.linkedin != "" ?
+                        (props.linkedin !== "" ?
 
                             <p className="mx-2" >
-                                <a href={props.linkedin} target="_blank" role="button">
+                                <a href={props.linkedin} target="_blank" role="button" rel="noreferrer">
                                     <Linkedin_svg />
                                 </a>
                             </p>
@@ -106,9 +106,9 @@ export function Speaker_card(props) {
                         )
                     }
                     {
-                        (props.twitter != "" ?
+                        (props.twitter !== "" ?
                             <p className="mx-2" >
-                                <a href={props.twitter} target="_blank" role="button">
+                                <a href={props.twitter} target="_blank" role="button" rel="noreferrer">
                                     <Twitter_svg />
                                 </a>
                             </p>
@@ -116,9 +116,9 @@ export function Speaker_card(props) {
                         )
                     }
                     {
-                        (props.insta != "" ?
+                        (props.insta !== "" ?
                             <p className="mx-2">
-                                <a href={props.insta} target="_blank" role="button">
+                                <a href={props.insta} target="_blank" role="button" rel="noreferrer">
                                     <Instagram_svg />
                                 </a>
                             </p>
