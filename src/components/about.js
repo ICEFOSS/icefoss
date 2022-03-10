@@ -50,7 +50,7 @@ export function AboutEachSection(props) {
             </div>
             <div className="px-6 pt-1 pb-2 h-full flex justify-end items-end">
                 <span className=" ">
-                    <a href={props.href} target="_blank" role="button" className={aboutStyle} rel="noreferrer">website</a>
+                    <a href={props.href} target="_blank" role="button" className={aboutStyle} rel="noreferrer">Read more</a>
                 </span>
             </div>
         </div>
