@@ -6,7 +6,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex justify-center">
-      <nav className=" bg-gray-900 fixed top-0 z-50 w-[98%] rounded-xl md:mt-3 mt-3 bg-opacity-30 hover:bg-opacity-90 transition-all duration-500">
+      <nav className=" bg-white fixed top-0 z-50 w-[98%] rounded-xl md:mt-3 mt-3 bg-opacity-30 hover:bg-opacity-90 transition-all duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 ">
             <div className="flex-shrink-0">

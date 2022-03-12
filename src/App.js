@@ -9,17 +9,17 @@ import Footer from './components/footer';
 import LazyLoad from 'react-lazyload';
 
 function App() {
-  let lastScroll = 0;
-  window.onscroll = function (e) {
-    var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-    var nav = document.querySelector('nav');
+  // let lastScroll = 0;
+  // window.onscroll = function (e) {
+  //   var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+  //   var nav = document.querySelector('nav');
 
-    scrollY <= lastScroll
-      ? nav.style.visibility = 'visible'
-      : nav.style.visibility = 'hidden';
+  //   scrollY <= lastScroll
+  //     ? nav.style.visibility = 'visible'
+  //     :  nav.style.visibility = 'hidden';
 
-    lastScroll = scrollY;
-  }
+  //   lastScroll = scrollY;
+  // }
   return (
     <>
 
