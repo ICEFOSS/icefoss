@@ -11,23 +11,9 @@ export default class Workshop extends Component {
             id='1'
             title="Robot Operating System (ROS)"
             description={`
-            <br>            
-            <p>Day 1 : Will have a 🔥 chat session with resources, collecting the ideas and potential, which they have.
-            Get some feedback about their expectation about the intership.
-            Starts of by making a motivation to the domain from basics to a professional exposure.
-            Will discuss about certifications which firm's offers and that can create an impact in job search.
-            Start of with basic Kali Linux tools.</p>
-            <br>            
-            <p>Day 2 : Explore more Kali Linux tools, HTB, Tryhackme and online tools. Get an idea about CTF challenges and the relevance of that. Perform a system/android level hacking.</p>
-            <br>                        
-            <p>Day 3: Introduction to VAPT, how to perform web hacking(XSS, CSRF, IDOR...etc).How to submit bug bounty reports etc. Discussions about pentesterlabs and other learning resources.</p>
-            <br>                        
-            <p>Day 4: Introduction to SOC, how to fetch log from servers, how to analyse them. Deep dive into OSINT Tools.</p>
-            <br>                        
-            <p>Day 5: Completing the SPLUNK fundamentals. Deepdive  into HTB, TRYHACKME, PENTESTERLABS.</p>
-            <br>                        
-            <p>Day 6: Project discussions, how to get a job in this field. How to sustain in this field with just bug bounty. Linkedin in exploration for best learning insights. Free learning materials and paid learning materials discussions.</p>
-            <br>            
+            <p>ROS is an open-source, meta-operating system for your robot - a flexible framework for writing robot software,  a collection of tools, libraries, and convention to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms.</p>
+            <br>
+            <p>The workshop will introduce you to RoS, how to use it and provide hands on training.</p>
             `}
             svg={ROS}
             link="#"
@@ -38,10 +24,20 @@ export default class Workshop extends Component {
             id='2'
             title="Cyber Security and Ethical Hacking"
             description={`
-            <br>            
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto quis sit velit. Atque, ex! Maiores tempore quaerat repudiandae beatae quia veniam neque illo, enim nulla quisquam sint corrupti officia error?
+            <p>The event will touch on the following:</p>
+            <br>
+            <p>Exploring basic Kali Linux tools, Tryhackme and online tools. </p>
+            <br>
+            <p>Get an idea about CTF challenges and perform a system/android level hacking.</p>
+            <br>
+            <p>Introduction to VAPT, web hacking and how to submit bug bounty reports with discussions about pentesterlabs</p>
+            <br>
+            <p>Introduction to SOC, how to fetch logs from servers and a deep dive into OSINT Tools, HTB, Tryhackme, and pentester labs.</p>
+            <br>
+            <p>Completing the SPLUNK fundamentals, project discussions, how to stay in the field with just bug bounties.</p>
+            <br>
+            <p>Conclusion with how to explore Linkedin for better learning insights.         </p>
             <br>           
-            <br>             
             `}
             svg={Hacking}
             link="#"
