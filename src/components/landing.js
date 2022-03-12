@@ -18,7 +18,6 @@ export default function Landing() {
               ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiast's and others. ICEFOSS 2022, scheduled on April 28th-30th is the 10th edition of this conference.
             </p>
             <div>
-              <p className='pl-3 mb-2 text-blue-900'>Registration links:</p>
               <div className="max-w-md grid grid-flow-col">
                 <a href='#Workshops'>
                   <button className=" inline-block mt-3 px-8 py-3 bg-gray-800 text-lg text-white rounded-md">

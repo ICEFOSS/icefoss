@@ -6,7 +6,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex justify-center">
-      <nav className=" bg-white fixed top-0 z-50 w-[98%] rounded-xl md:mt-3 mt-3 bg-opacity-30 hover:bg-opacity-90 transition-all duration-500">
+      <nav className=" bg-white hover:bg-slate-600 fixed top-0 z-50 w-[98%] rounded-xl md:mt-3 mt-3 bg-opacity-20 hover:bg-opacity-90 transition-all duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 ">
             <div className="flex-shrink-0">
@@ -14,31 +14,31 @@ function Nav() {
             </div>
             <div className="flex items-center">
               <div className="hidden md:block ">
-                <div className="-mr-2 w-fit flex items-baseline space-x-4 ">
+                <div className="-mr-2 w-full flex items-baseline space-x-4 ">
                   <a
                     href="#Landing"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Dashboard
                   </a>
 
                   <a
                     href="#About"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white hover:bg-gray-700  px-3 py-2 rounded-md text-sm font-medium"
                   >
                     About
                   </a>
 
                   <a
                     href="#Speakers"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white hover:bg-gray-700  px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Speakers
                   </a>
 
                   <a
                     href="#Workshops"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-white hover:bg-gray-700  px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Workshops
                   </a>
@@ -50,7 +50,7 @@ function Nav() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-100 bg-opacity-60 text-gray-400  hover:bg-gray-800  inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -107,28 +107,28 @@ function Nav() {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
                   href="#Landing"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Dashboard
                 </a>
 
                 <a
                   href="#About"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-700  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
                 </a>
 
                 <a
                   href="#Speakers"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-700  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Speakers
                 </a>
 
                 <a
                   href="#Workshops"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-white hover:bg-gray-700  block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Workshops
                 </a>
