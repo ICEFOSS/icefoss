@@ -10,12 +10,12 @@ export default function Landing() {
       <section className="ml-0  duration-200 h-fit" id="Landing">
         <div className="bg-bgblue animate-[wiggle_90s_scroll_infinite_linear] h-screen flex justify-items-center items-center md:justify-center lg:justify-start">
           <div className="px-2  mt-36  lg:pl-44">
-            <h1 className="text-6xl font-semibold font-mono mb-6">
+            <h1 className="text-5xl md:text-6xl font-semibold font-mono mb-6">
               <span className="text-gray-800">ICEFOSS</span> <br />
               <span className="text-gray-100">28TH - 30TH APR 2022</span>
             </h1>
-            <p className="text-lg max-w-md mb-8 text-gray-800">
-              ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiast's and others. ICEFOSS 2022, scheduled on April 28th-30th is the 12th edition of this conference.
+            <p className="text-base md:text-lg max-w-md mb-8 text-gray-800">
+              ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiast's and others. ICEFOSS 2022, scheduled on April 28th-30th is the 10th edition of this conference.
             </p>
             <div>
               <p className='pl-3 mb-2 text-blue-900'>Registration links:</p>
