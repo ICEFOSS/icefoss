@@ -56,7 +56,7 @@ function WorkshopEachSection(props) {
       <div id={`workshop${props.id}`} className="my-1 px-1 md:p-2 w-full sm:w-10/12 md:w-7/12 lg:w-5/12">
         <div className="relative block group h-[22rem] active:h-[22rem] hover:h-[22rem] focus:h-[22rem] md:h-[24rem] md:hover:h-[24rem]">
 
-          <div className="relative flex items-end h-full transform overflow-hidden group-hover:overflow-y-scroll from-[#1ca2fc] via-[#1ca2fc]  to-[#1c5982]  bg-gradient-to-tl  shadow-md shadow-black  rounded-xl transition-all duration-1000">
+          <div className="relative flex items-end h-full transform overflow-hidden group-hover:overflow-y-scroll from-[#1ca2fc] via-[#1ca2fc]  to-[#56beff]  bg-gradient-to-tl  shadow-md shadow-black  rounded-xl transition-all duration-1000">
 
             <div className="px-8 pb-8 transition-opacity hover:opacity-0 group-hover:hidden  mx-auto w-fit">
 
