@@ -61,7 +61,7 @@ function TeamMembers(props) {
   return (
     <Row className="members">
       {props.map(s => (
-        <Col className="" sm={12} lg={4} md={4}>
+        <Col className="" sm={12} lg={6} md={6}>
           <Member info={s} />
         </Col>
       ))}
@@ -69,22 +69,52 @@ function TeamMembers(props) {
   );
 }
 
-
-
-
 function FrequentlyAsked(props) {
   return (
     <Row className="sf">
       {props.map(s => (
         <Col className="" sm={12} lg={6} md={6}>
-        <Accordion panels={ s }/>
+          <Accordion panels={s} />
         </Col>
       ))}
     </Row>
   );
 }
 
+function Venue() {
+  return (
+    <div className="Venue">
+      <div>
+        <iframe
+          className="iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3671449789995!2d76.40663386536662!3d10.231943892692387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1648703846606!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
 
+      <div className="VenueText">
+        <div className="VenueDesc">
+          <div style={{textDecoration: "underline"}}>Mobile</div>
+          <div>Kajal : +91 90619 11103</div>
+          <div> Naveen : +91 86063 30293</div>
+        </div>
+        <div className="VenueDesc">
+          <div style={{textDecoration: "underline"}}>Venue</div>
+          <div>
+            Federal Institute of Science And Technology - Hormis Nagar,
+            Mookkannoor, Angamaly, Kerala 683577
+          </div>
+        </div>
+        <div className="VenueDesc">
+          <div style={{textDecoration: "underline"}}>Email</div>
+          <div>icefoss@fisat.ac.in</div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function HomePage(props) {
   return (
@@ -120,9 +150,9 @@ export default function HomePage(props) {
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
-        {frequentlyAskedQuestions.map(FrequentlyAsked)}
-        {/* ********Frequently asked Questions ending here ***** */}
-         </div>  
+          {frequentlyAskedQuestions.map(FrequentlyAsked)}
+          {/* ********Frequently asked Questions ending here ***** */}
+        </div>
 
         {/* ********Prizes here ***** */}
         <Row className="prizesection" id="prizes">
@@ -148,18 +178,25 @@ export default function HomePage(props) {
         <Birds top="120vh" left="0vh" type="" />
 
         {/* ********Team here ***** */}
-        <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && <JoinTeam placeholder="Join our team" formLink={FOOTER.JOIN_TEAM} content="Interested in joining our team" />}
+        <h1 id="team">Our Speakers</h1>
+        {/* {FOOTER.JOIN_TEAM.required && <JoinTeam placeholder="Join our team" formLink={FOOTER.JOIN_TEAM} content="Interested in joining our team" />} */}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
         {/* ********Judges here ***** */}
-        
+
         <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && <JoinTeam placeholder="Join our team" formLink={TOP_SECTION.JUDGES_FORM_LINK} content="Interested in being judge" />}
+        {FOOTER.JOIN_TEAM.required && (
+          <JoinTeam
+            placeholder="Join our team"
+            formLink={TOP_SECTION.JUDGES_FORM_LINK}
+            content="Interested in being judge"
+          />
+        )}
         {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
-
+        <h1>Venue</h1>
+        {Venue()}
       </Container>
       <Footer />
     </div>

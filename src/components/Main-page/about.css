@@ -30,12 +30,12 @@ h1 {
   width: 100%;
   position: relative;
   transition: 0.3s;
-  top:0px;
+  top: 0px;
   transition: top 0.2s linear;
 }
 .d-image img:hover {
-opacity: 0.9;
-top: 10px;
+  opacity: 0.9;
+  top: 10px;
 }
 .logoSection {
   text-align: center;
@@ -67,8 +67,38 @@ top: 10px;
   margin-top: -16vh;
 }
 
-
-
+.Venue {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: moverVenu 1s infinite alternate;
+  animation: moverVenu 1s infinite alternate;
+}
+.iframe {
+  border: 2px outset #999;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  width: 50rem;
+  height: 50rem;
+}
+.VenueText {
+  font-size: large;
+  font-weight: 500;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px outset #999;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  width: 50rem;
+  height: 50rem;
+  background-color: #e6e6e6;
+}
+.VenueDesc {
+  padding: 1rem;
+}
 @media (max-width: 570px) {
   .mediaInfo {
     margin-top: 0;
@@ -98,5 +128,52 @@ top: 10px;
   .logoSection {
     text-align: center;
     padding: 20vh 0vh 0 0vh;
+  }
+  .Venue {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .iframe {
+    border: 2px outset #999;
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    width: 35rem;
+    height: 35rem;
+  }
+  .VenueText {
+    font-family: "Montserrat", sans-serif;
+    width: 35rem;
+    height: 35rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .iframe {
+    border: 2px outset #999;
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    width: 35rem;
+    height: 35rem;
+  }
+  .VenueText {
+    font-family: "Montserrat", sans-serif;
+    width: 35rem;
+    height: 35rem;
+  }
+}
+@-webkit-keyframes moverVenu {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes moverVenu {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
   }
 }
