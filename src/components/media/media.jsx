@@ -12,11 +12,7 @@ export default function Media() {
         </a>
       </div>
 
-      <div className="single">
-        <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
-          <i class="fab fa-3x fa-discord"></i>
-        </a>
-      </div>
+
 
       <div className="single">
         <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
@@ -28,11 +24,7 @@ export default function Media() {
           <i class="fab fa-3x fa-twitter"></i>
         </a>
       </div>
-      <div className="single">
-        <a rel="noreferrer" target="_blank" href={SOCIALS.devpost}>
-          <i class="fab fa-3x fa-dev"></i>
-        </a>
-      </div>
+
     </div>
   );
 }

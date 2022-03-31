@@ -36,16 +36,16 @@ import boy from "./Assets/boy.png";
 
 
 const TOP_SECTION = {
-  TITLE: "Join Limbo Hacks",
-  Typed_effect: ["24 hours of creation", "Win awesome prizes"],
+  TITLE: "ICEFOSS 2022",
+  Typed_effect: ["36 hours of creation", "36 Hours of learning"],
   SHORT_DESCRIPTION:
-    "Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.",
+    "ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiast's and others. ICEFOSS 2022, scheduled on April 28th-30th is the 10th edition of this conference.",
   IMG_SRC: boy,
   DISCORD_LINK: "",
   JUDGES_FORM_LINK:
-    "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u",
+    "",
   HACKERS_REGISTRATION_FORM_LINK:
-    "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u"
+    "https://forms.gle/8m47qt8FYhKKSqBN6"
 };
 
 const SOCIALS = {
@@ -59,9 +59,9 @@ const SOCIALS = {
 };
 
 const MIDDLE_SECTION = {
-  TITLE: "What is Limbo hacks?",
+  TITLE: "What is ICEFOSS?",
   LONG_DESCRIPTION:
-    "Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.",
+    "ICEFOSS 2022 is the 12th edition  Free Software Conference organized by FISAT  Free Software Cell (FFSC). ICEFOSS 2022, is scheduled on April 28.29, 30 - 2022.  Throughout the weekend at ICEFOSS will have unique opportunities to learn ,develop and grow. We are determined to have an all-inclusive and diverse group of students attending.",
   LOGO_EFFECT: true,
   LOGO: ""
 };

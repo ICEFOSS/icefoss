@@ -53,11 +53,7 @@ export default function Footer() {
               <img src={Insta} alt="" />
             </a>
           </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
-              <img src={Dis} alt="" />
-            </a>
-          </div>
+
           <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
               <img src={Linked} alt="" />

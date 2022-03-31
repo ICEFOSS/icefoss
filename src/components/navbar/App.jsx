@@ -78,22 +78,22 @@ const NAVBAR = ({}) => {
               </li>
               <li>
                 <Link to={`#faq`}>
-                  <span className="links">FAQ </span>{" "}
+                  <span className="links">Dashboard </span>{" "}
                 </Link>
               </li>
               <li>
                 <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{" "}
+                  <span className="links">About </span>{" "}
                 </Link>
               </li>
               <li>
                 <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{" "}
+                  <span className="links">Speakers </span>{" "}
                 </Link>
               </li>
               <li>
                 <Link to={`#team`}>
-                  <span className="links">team </span>{" "}
+                  <span className="links">Workshops </span>{" "}
                 </Link>
               </li>
               <img
