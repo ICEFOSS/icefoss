@@ -54,8 +54,8 @@ const SOCIALS = {
   linkedin: "https://www.linkedin.com/company/limbo-hacks/",
   twitter: "https://twitter.com/HacksLimbo",
   devpost: "https://limbo-hacks-12968.devpost.com/",
-  email: "mailto:hello@limbohacks.tech",
-  mail: "hello@limbohacks.tech"
+  email: "mailto:icefoss@fisat.ac.in",
+  mail: "icefoss@fisat.ac.in"
 };
 
 const MIDDLE_SECTION = {
@@ -75,14 +75,6 @@ const FOOTER = {
     required: false,
     src: "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u"
   },
-  Privacy_policy: {
-    required: true,
-    src: ""
-  },
-  Terms_of_use: {
-    required: true,
-    src: ""
-  }
 };
 
 /** ICON

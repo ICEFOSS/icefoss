@@ -72,11 +72,10 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  -webkit-animation: moverVenu 1s infinite alternate;
-  animation: moverVenu 1s infinite alternate;
 }
 .iframe {
   border: 2px outset #999;
+  margin-right: 2rem;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
   width: 50rem;
@@ -159,21 +158,5 @@ h1 {
     font-family: "Montserrat", sans-serif;
     width: 35rem;
     height: 35rem;
-  }
-}
-@-webkit-keyframes moverVenu {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-15px);
-  }
-}
-@keyframes moverVenu {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-15px);
   }
 }
