@@ -1,11 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import NAV from "./components/navbar/App.jsx";
+import LOADER from "./components/Loading/loading.jsx";
+
+const rootElement = document.getElementById("body");
+const footer = document.getElementById("footer");
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <div>
+    <NAV />
+  </div>,
+  rootElement
 );
+
+ReactDOM.render(
+  <div>
+    <LOADER />
+  </div>,
+  footer
+);
+
