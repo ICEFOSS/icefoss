@@ -19,11 +19,7 @@ export default function Media() {
           <i class="fab fa-3x fa-linkedin-in"></i>
         </a>
       </div>
-      <div className="single">
-        <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
-          <i class="fab fa-3x fa-twitter"></i>
-        </a>
-      </div>
+     
 
     </div>
   );

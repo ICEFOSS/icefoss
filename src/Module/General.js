@@ -8,7 +8,7 @@ import pass from "./Assets/sponsorsLogos/1pass.png";
 import glimpse from "./Assets/sponsorsLogos/glimpse.png";
 import qoom from "./Assets/sponsorsLogos/qoom.svg";
 import sublime from "./Assets/sponsorsLogos/sublime.png";
-import egg from "./Assets/sponsorsLogos/egg.png";
+import digo from "./Assets/sponsorsLogos/do.svg";
 import ll from "./Assets/sponsorsLogos/ll.png";
 import ACF from "./Assets/sponsorsLogos/ACF.png";
 
@@ -39,7 +39,7 @@ const TOP_SECTION = {
   TITLE: "ICEFOSS 2022",
   Typed_effect: ["36 hours of creation", "36 Hours of learning"],
   SHORT_DESCRIPTION:
-    "ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiast's and others. ICEFOSS 2022, scheduled on April 28th-30th is the 10th edition of this conference.",
+    "ICEFOSS is a Free Software Conference organized by FISAT Free Software Cell (FFSC) aiming all FOSS enthusiasts and others. ICEFOSS 2022, scheduled on May 5th-7th is the 10th edition of this conference.",
   IMG_SRC: boy,
   DISCORD_LINK: "",
   JUDGES_FORM_LINK:
@@ -49,11 +49,11 @@ const TOP_SECTION = {
 };
 
 const SOCIALS = {
-  instagram: "https://www.instagram.com/limbohacks/",
+  instagram: "https://www.instagram.com/icefossfisat/",
   discord: "https://discord.com/invite/8XJSzmtWPp",
-  linkedin: "https://www.linkedin.com/company/limbo-hacks/",
-  twitter: "https://twitter.com/HacksLimbo",
-  devpost: "https://limbo-hacks-12968.devpost.com/",
+  linkedin: "https://www.linkedin.com/groups/14077086",  
+
+  
   email: "mailto:icefoss@fisat.ac.in",
   mail: "icefoss@fisat.ac.in"
 };
@@ -61,7 +61,7 @@ const SOCIALS = {
 const MIDDLE_SECTION = {
   TITLE: "What is ICEFOSS?",
   LONG_DESCRIPTION:
-    "ICEFOSS 2022 is the 12th edition  Free Software Conference organized by FISAT  Free Software Cell (FFSC). ICEFOSS 2022, is scheduled on April 28.29, 30 - 2022.  Throughout the weekend at ICEFOSS will have unique opportunities to learn ,develop and grow. We are determined to have an all-inclusive and diverse group of students attending.",
+    "ICEFOSS 2022 is the 12th edition  Free Software Conference organized by FISAT  Free Software Cell (FFSC). ICEFOSS 2022, is scheduled on May 5, 6 , 7 - 2022.  Throughout the weekend at ICEFOSS will have unique opportunities to learn ,develop and grow. We are determined to have an all-inclusive and diverse group of students attending.",
   LOGO_EFFECT: true,
   LOGO: ""
 };
@@ -201,7 +201,7 @@ const sponsorLogos = [
   [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
   [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
   [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
-  [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+  [{src: digo}, {src: ll}, {src: ACF}] //Array 4
 ];
 // const Venue=[
 //   {iframe}

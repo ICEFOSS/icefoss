@@ -103,8 +103,9 @@ function Venue() {
         <div className="VenueDesc">
           <div style={{textDecoration: "underline"}}>Venue</div>
           <div>
-            Federal Institute of Science And Technology - Hormis Nagar,
-            Mookkannoor, Angamaly, Kerala 683577
+            Federal Institute of Science And Technology 
+            Hormis Nagar, Mookkannoor,<br/>
+            Angamaly, Kerala - 683577
           </div>
         </div>
         <div className="VenueDesc">

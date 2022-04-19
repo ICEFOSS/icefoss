@@ -5,7 +5,6 @@ import Insta from "./icons8-instagram.svg";
 import Linked from "./icons8-linkedin-2.svg";
 import Mail from "./icons8-mail.svg";
 import DevPost from "./icons8-dev-post.svg";
-import Twitter from "./icons8-twitter.svg";
 import {Btn} from "../Top-division-components/Top-division-components.jsx";
 import cross from "./cross.svg";
 import {SOCIALS, TOP_SECTION, FOOTER} from "../../Module/General";
@@ -63,11 +62,7 @@ export default function Footer() {
               <img src={Mail} alt="" />
             </a>
           </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.twitter}>
-              <img src={Twitter} alt="" />
-            </a>
-          </div>
+          
         </div>
         <div className="Register_a">
           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
