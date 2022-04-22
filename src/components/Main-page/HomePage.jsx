@@ -19,7 +19,6 @@ import Media from "../media/media.jsx";
 import {
   TOP_SECTION,
   TeamInfo,
-  JudgesInfo,
   sponsorLogos,
   frequentlyAskedQuestions,
   FOOTER
@@ -186,7 +185,8 @@ export default function HomePage(props) {
 
         {/* ********Judges here ***** */}
 
-        <h1 id="team">Judges</h1>
+        {/*<h1 id="team">Judges</h1>*/}
+        
         {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
@@ -194,7 +194,7 @@ export default function HomePage(props) {
             content="Interested in being judge"
           />
         )}
-        {JudgesInfo.map(TeamMembers)}
+        
         {/* ********Team ending here ***** */}
         <h1>Venue</h1>
         {Venue()}
