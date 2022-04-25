@@ -9,9 +9,11 @@ function SponsorsHead() {
 
 function Sponsor(props) {
   return (
-    <div className="Sponsor ">
-      <img src={props.srcx} alt="Limbo hacks"></img>
-    </div>
+    <a href={props.link} target="__blank">
+      <div className="Sponsor ">
+        <img src={props.srcx} alt="Limbo hacks"></img>
+      </div>
+    </a>
   );
 }
 

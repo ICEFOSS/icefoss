@@ -100,6 +100,10 @@ h1 {
   padding: 1rem;
 }
 @media (max-width: 570px) {
+  .info {
+    margin-top: 6vh;
+    color: white;
+  }
   .mediaInfo {
     margin-top: 0;
   }

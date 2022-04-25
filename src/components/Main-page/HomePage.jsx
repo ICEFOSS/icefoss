@@ -36,7 +36,7 @@ function SponsorGroup(props) {
       {props.map(s => (
         <Col className="" sm={12} lg={4} md={6}>
           {" "}
-          <Sponsor srcx={s.src} />{" "}
+          <Sponsor srcx={s.src} link={s.link} />{" "}
         </Col>
       ))}
     </Row>
@@ -64,7 +64,7 @@ function TeamMembers(props) {
   return (
     <Row className="members">
       {props.map(s => (
-        <Col className="" sm={12} lg={6} md={6}>
+        <Col className="" sm={12} lg={4} md={6}>
           <Member info={s} />
         </Col>
       ))}
@@ -144,37 +144,44 @@ export default function HomePage(props) {
       </div>
       <Container fluid>
         {/* Logo section  */}
-        <Row className=" logoSection">
-          <Col className="info-div" sm={12} lg={8} md={8}>
-            <LogoSectionAbout />
-          </Col>
-          <Col className="info-div" sm={12} lg={4} md={4}>
-            <Logo />
-          </Col>
-        </Row>
-        {/* <Row className=" logoSection">
+        <div id="about">
+          <Row className=" logoSection">
+            <Col className="info-div" sm={12} lg={8} md={8}>
+              <LogoSectionAbout />
+            </Col>
+            <Col className="info-div" sm={12} lg={4} md={4}>
+              <Logo />
+            </Col>
+          </Row>
+          {/* <Row className=" logoSection">
           <Col className="info-div" sm={12} lg={8} md={8}>
             <LogoSectionAboutHackFit />
           </Col>
         </Row> */}
-
+        </div>
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
           {frequentlyAskedQuestions.map(FrequentlyAsked)}
           {/* ********Frequently asked Questions ending here ***** */}
         </div>
 
+        {/* Workshops */}
+        <div>
+          <h1>Workshop</h1>
+          <div></div>
+        </div>
+
         {/* ********Prizes here ***** */}
-        <Row className="prizesection" id="prizes">
+        {/* <Row className="prizesection" id="prizes">
           <PrizeHeading type="Prize section" />
           {Prizeinfo.map(PrizeGroup)}
-        </Row>
+        </Row> */}
         {/* ********Prizes ending here ***** */}
 
-        <Row className="prizesection non-coding">
+        {/* <Row className="prizesection non-coding">
           <PrizeHeading type="Non-coding prizes" />
           <h2>coming soon</h2>
-        </Row>
+        </Row> */}
 
         {/* ********Sponsors here ***** */}
 
@@ -188,9 +195,11 @@ export default function HomePage(props) {
         <Birds top="120vh" left="0vh" type="" />
 
         {/* ********Team here ***** */}
-        <h1 id="team">Our Speakers</h1>
+
+        <h1 id="speakers">Our Speakers</h1>
         {/* {FOOTER.JOIN_TEAM.required && <JoinTeam placeholder="Join our team" formLink={FOOTER.JOIN_TEAM} content="Interested in joining our team" />} */}
         {TeamInfo.map(TeamMembers)}
+
         {/* ********Team ending here ***** */}
 
         {/* ********Judges here ***** */}
