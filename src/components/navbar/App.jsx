@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 import HomePage from "../Main-page/HomePage";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import { HashLink as Link } from 'react-router-hash-link';
+import {HashLink as Link} from "react-router-hash-link";
 import hamLogo from "./ham.svg";
 import logoClose from "./ham-c.svg";
 import styled from "styled-components";
@@ -9,7 +9,7 @@ import "./styles.scss";
 
 const Wrapper = styled.div`
   display: block;
-  width:40%;
+  width: 40%;
   margin-top: 20px;
   @media (max-width: 470px) {
     margin: 0;
@@ -70,9 +70,9 @@ const NAVBAR = ({}) => {
       <nav className="nav_bar" style={{backgroundColor: color}}>
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
-          <ul>
+            <ul>
               <li>
-                <Link   to={`#home`}>
+                <Link to={`#home`}>
                   <span className="links">Home </span>{" "}
                 </Link>
               </li>
@@ -82,17 +82,17 @@ const NAVBAR = ({}) => {
                 </Link>
               </li>
               <li>
-                <Link to={`#prizes`}>
+                <Link to={`#about`}>
                   <span className="links">About </span>{" "}
                 </Link>
               </li>
               <li>
-                <Link to={`#sponsors`}>
+                <Link to={`#speakers`}>
                   <span className="links">Speakers </span>{" "}
                 </Link>
               </li>
               <li>
-                <Link to={`#team`}>
+                <Link to={`#workshop`}>
                   <span className="links">Workshops </span>{" "}
                 </Link>
               </li>

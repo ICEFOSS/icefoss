@@ -23,7 +23,7 @@ nav {
   width: 30%;
 }
 ul {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,7 +47,11 @@ a:link {
   text-decoration: none;
   padding: 1px;
 }
-
+// @media(max-width:810px){
+//   .ul{
+//     justify-content: space-around;
+//   }
+// }
 @media (max-width: 470px) {
   .ease {
     background: #484848;
