@@ -6,13 +6,21 @@ import logo1 from "./logo4.png";
 import logo2 from "./logo2.png";
 import logo3 from "./logo3.png";
 
-import {MIDDLE_SECTION} from "../../Module/General";
+import {MIDDLE_SECTION, MIDDLE_SECTION_HackFit} from "../../Module/General";
 
 function LogoSectionAbout() {
   return (
     <div className="LogoSectionAbout">
       <h1>{MIDDLE_SECTION.TITLE}</h1>
       <p>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
+    </div>
+  );
+}
+function LogoSectionAboutHackFit() {
+  return (
+    <div className="LogoSectionAbout">
+      <h1>{MIDDLE_SECTION_HackFit.TITLE}</h1>
+      <p>{MIDDLE_SECTION_HackFit.LONG_DESCRIPTION}</p>
     </div>
   );
 }
@@ -39,4 +47,4 @@ function Logo() {
   return myLogo;
 }
 
-export {Logo, LogoSectionAbout};
+export {Logo, LogoSectionAbout, LogoSectionAboutHackFit};

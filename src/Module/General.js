@@ -62,6 +62,13 @@ const SOCIALS = {
 const MIDDLE_SECTION = {
   TITLE: "What is ICEFOSS?",
   LONG_DESCRIPTION:
+    "ICEFOSS 2022 is the 10th edition  Free Software Conference organized by FISAT  Free Software Cell (FFSC). ICEFOSS 2022, is scheduled on May 5, 6 , 7 - 2022.  Throughout the weekend at ICEFOSS will have unique opportunities to learn ,develop and grow. We are determined to have an all-inclusive and diverse group of students attending.",
+  LOGO_EFFECT: true,
+  LOGO: ""
+};
+const MIDDLE_SECTION_HackFit = {
+  TITLE: "What is Hackfit?",
+  LONG_DESCRIPTION:
     "ICEFOSS 2022 is the 12th edition  Free Software Conference organized by FISAT  Free Software Cell (FFSC). ICEFOSS 2022, is scheduled on May 5, 6 , 7 - 2022.  Throughout the weekend at ICEFOSS will have unique opportunities to learn ,develop and grow. We are determined to have an all-inclusive and diverse group of students attending.",
   LOGO_EFFECT: true,
   LOGO: ""
@@ -212,7 +219,7 @@ const frequentlyAskedQuestions  = [
   [
     [
       {
-        label: "What is a hackathon?",
+        label: "What is a Hackfit?",
         content:
         'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'      },
       {
@@ -300,7 +307,7 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-
+  MIDDLE_SECTION_HackFit,
   frequentlyAskedQuestions,
   FFGSVG
 };

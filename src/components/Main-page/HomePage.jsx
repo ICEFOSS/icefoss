@@ -4,7 +4,11 @@ import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import "./about.css";
-import {Logo, LogoSectionAbout} from "../logo-section/logoSection.jsx";
+import {
+  Logo,
+  LogoSectionAbout,
+  LogoSectionAboutHackFit
+} from "../logo-section/logoSection.jsx";
 import {FirstPrize, PrizeHeading} from "../prize tracks/prizes.jsx";
 import {Prizeinfo} from "../../Module/General";
 import {Accordion} from "../FAQ/faq.jsx";
@@ -102,8 +106,9 @@ function Venue() {
         <div className="VenueDesc">
           <div style={{textDecoration: "underline"}}>Venue</div>
           <div>
-            Federal Institute of Science And Technology 
-            Hormis Nagar, Mookkannoor,<br/>
+            Federal Institute of Science And Technology Hormis Nagar,
+            Mookkannoor,
+            <br />
             Angamaly, Kerala - 683577
           </div>
         </div>
@@ -147,6 +152,11 @@ export default function HomePage(props) {
             <Logo />
           </Col>
         </Row>
+        <Row className=" logoSection">
+          <Col className="info-div" sm={12} lg={8} md={8}>
+            <LogoSectionAboutHackFit />
+          </Col>
+        </Row>
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
@@ -186,7 +196,7 @@ export default function HomePage(props) {
         {/* ********Judges here ***** */}
 
         {/*<h1 id="team">Judges</h1>*/}
-        
+
         {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
@@ -194,7 +204,7 @@ export default function HomePage(props) {
             content="Interested in being judge"
           />
         )}
-        
+
         {/* ********Team ending here ***** */}
         <h1>Venue</h1>
         {Venue()}
