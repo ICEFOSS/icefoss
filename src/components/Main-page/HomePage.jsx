@@ -152,11 +152,11 @@ export default function HomePage(props) {
             <Logo />
           </Col>
         </Row>
-        <Row className=" logoSection">
+        {/* <Row className=" logoSection">
           <Col className="info-div" sm={12} lg={8} md={8}>
             <LogoSectionAboutHackFit />
           </Col>
-        </Row>
+        </Row> */}
 
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
