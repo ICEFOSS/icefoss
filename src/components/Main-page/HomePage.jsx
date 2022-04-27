@@ -28,6 +28,9 @@ import {
   FOOTER
 } from "../../Module/General";
 
+import { Hacking } from "./hacking.jsx";
+import { ROS } from "./ros.jsx";
+
 // javascript Map for sponsors
 
 function SponsorGroup(props) {
@@ -168,7 +171,9 @@ export default function HomePage(props) {
         {/* Workshops */}
         <div>
           <h1>Workshop</h1>
-          <div></div>
+          <div>
+            <ROS />
+          </div>
         </div>
 
         {/* ********Prizes here ***** */}
