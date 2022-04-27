@@ -9,6 +9,7 @@ export const Devconn = () =>
         width:'100%'
     }}>Devloper Connect</h3>
   <p> 
+  Providing a platform to connect budding developers to experienced developers. Organised with the intention of inspiring and guiding young minds, where the audience can interact as well as clear their doubts as they go through the journey of becoming technically efficient. We have been able to bring in accomplished people who are more than eager to share their story as well as direct those pursuing the same path.
 </p>
     <button class="card-button">Register</button>
   </div>

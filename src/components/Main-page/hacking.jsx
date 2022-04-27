@@ -6,9 +6,11 @@ export const Hacking = () =>
   <div class="content">
     <h3>Cyber Security and Ethical Hacking</h3>
   <p>
-  The event will touch on the following:
-  Exploring basic Kali Linux tools, Tryhackme and online tools.
-  Get an idea about CTF challenges and perform a system/android level hacking.
+   Exploring basic Kali Linux tools, Tryhackme and online tools.
+ Provides hands on about CTF challenges and system/android level hacking.
+  Introduction to VAPT,SOC,web hacking ,how to submit bug bounty reports with discussions about pentester labs,how to fetch logs from server and about OSINT Tools, HTB.
+  Will complete the SPLUNK fundamentals, project discussions, how to stay in the field with just bug bounties.
+  Concludes with how to explore Linkedin for better learning insights.
 </p>
 <button class="card-button">Register</button>
   </div>
