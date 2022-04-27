@@ -8,18 +8,7 @@ import seq from "./Assets/sponsorsLogos/seq.png";
 import digo from "./Assets/sponsorsLogos/do.svg";
 import armia from "./Assets/sponsorsLogos/armia.svg";
 import net from "./Assets/sponsorsLogos/net.png";
-import {FFGSVG} from "./ffscLogo";
-// import sublime from "./Assets/sponsorsLogos/sublime.png";
-
-//import ll from "./Assets/sponsorsLogos/ll.png";
-//import ACF from "./Assets/sponsorsLogos/ACF.png";
-
-/** Put all your sponsors logo inside folder `sponsorLogos`
- * and import them in the above and update `src` in sponsorLogos
- * or you can provide a cloud link in src
- */
-
-// Importing all Team members images  from Assets
+import {FFGSVG} from "./svg";
 
 import Siji from "./Assets/teami/siji.jpeg";
 
@@ -112,12 +101,7 @@ const Prizeinfo = [
   ],
   [
     //Array 2
-    {
-      // icon: <i class="fab fourth fa-3x fa-wpbeginner"></i>,
-      // type: "Best Solo",
-      // content:
-      //   "You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team"
-    },
+    {},
     {
       icon: <i class="first fas fa-4x fa-trophy"></i>,
       type: " Best Beginner",
@@ -125,19 +109,6 @@ const Prizeinfo = [
     },
     {}
   ]
-  // [
-  //   //Array 3
-  //   {
-  //     icon: <i class="fas fa-4x sixth fa-male"></i>,
-  //     type: "Best Web App with Qoom",
-  //     content: "Must use qoom in your project to win this category"
-  //   },
-  //   {
-  //     icon: <i class="fas fa-user-friends seventh fa-3x "></i>,
-  //     type: "More prizes",
-  //     content: "More prizes will be revealed later"
-  //   }
-  // ]
 ];
 
 /** Instructions
@@ -246,7 +217,7 @@ const frequentlyAskedQuestions = [
 
       {
         label: "Will there be swag?",
-        content: "Yes! Participants will recieveing swag!."
+        content: "Yes! Participants will recieve swag!."
       }
     ]
   ]

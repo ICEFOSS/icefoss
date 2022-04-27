@@ -9,8 +9,6 @@ import {
   LogoSectionAbout,
   LogoSectionAboutHackFit
 } from "../logo-section/logoSection.jsx";
-import {FirstPrize, PrizeHeading} from "../prize tracks/prizes.jsx";
-import {Prizeinfo} from "../../Module/General";
 import {Accordion} from "../FAQ/faq.jsx";
 import {Sponsor, SponsorsHead, SponsorUS} from "../Sponsors/sponsors.jsx";
 
@@ -19,7 +17,8 @@ import Footer from "../Footer/footer.jsx";
 import {Member, JoinTeam} from "../team/team.jsx";
 import pattern from "./pattern4.png";
 import Media from "../media/media.jsx";
-
+import Hacking from "../../Module/Assets/workshop/hacking.webp";
+import {ROS} from "../../Module/svg";
 import {
   TOP_SECTION,
   TeamInfo,
@@ -43,23 +42,6 @@ function SponsorGroup(props) {
   );
 }
 
-// javascript Map for sponsors end
-
-// Prize group
-
-function PrizeGroup(props) {
-  return (
-    <Row>
-      {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
-          <FirstPrize icon={s.icon} type={s.type} content={s.content} />
-        </Col>
-      ))}
-    </Row>
-  );
-}
-
-// Prize group ending
 function TeamMembers(props) {
   return (
     <Row className="members">
@@ -69,6 +51,31 @@ function TeamMembers(props) {
         </Col>
       ))}
     </Row>
+  );
+}
+
+function workshopDetails() {
+  return (
+    <div>
+      <div className="eachWorkshop">
+        <img className="WorkshopImage" src={Hacking} alt="Hacking" />
+        <div className="WorkshopText">
+          <h1 className="WorkshopTextHeading">Ethical Hacking</h1>
+          <div className="WorkshopTextContent">asdasdasdasd</div>
+        </div>
+      </div>
+      <div className="eachWorkshop">
+        <div className="WorkshopText">
+          <h1 className="WorkshopTextHeading">Robotic Operating System</h1>
+          <div className="WorkshopTextContent">asdasdasdasd</div>
+        </div>
+        <img className="WorkshopImage" src={ROS} alt="ROS" />
+      </div>
+      <div className="eachWorkshop">
+        <img className="WorkshopImage" src={Hacking} alt="Hacking" />
+        <div className="WorkshopText">asdasdasdasdasdasdasd</div>
+      </div>
+    </div>
   );
 }
 
@@ -153,11 +160,6 @@ export default function HomePage(props) {
               <Logo />
             </Col>
           </Row>
-          {/* <Row className=" logoSection">
-          <Col className="info-div" sm={12} lg={8} md={8}>
-            <LogoSectionAboutHackFit />
-          </Col>
-        </Row> */}
         </div>
         {/* ********Frequently asked Questions here ***** */}
         <div className="Myfaqs" id="faq">
@@ -168,20 +170,8 @@ export default function HomePage(props) {
         {/* Workshops */}
         <div>
           <h1>Workshop</h1>
-          <div></div>
+          <div>{workshopDetails()}</div>
         </div>
-
-        {/* ********Prizes here ***** */}
-        {/* <Row className="prizesection" id="prizes">
-          <PrizeHeading type="Prize section" />
-          {Prizeinfo.map(PrizeGroup)}
-        </Row> */}
-        {/* ********Prizes ending here ***** */}
-
-        {/* <Row className="prizesection non-coding">
-          <PrizeHeading type="Non-coding prizes" />
-          <h2>coming soon</h2>
-        </Row> */}
 
         {/* ********Sponsors here ***** */}
 
