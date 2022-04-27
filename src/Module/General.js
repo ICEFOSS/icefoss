@@ -257,7 +257,7 @@ export {
   MIDDLE_SECTION,
   SOCIALS,
   FOOTER,
-  Prizeinfo,
+  
   sponsorLogos,
   TeamInfo,
   MIDDLE_SECTION_HackFit,
