@@ -176,3 +176,98 @@ h1 {
   gap: 10em;
   /* animation: mover 1s infinite alternate ; */
 }
+
+.card{
+  border: 0px;
+  border-radius: 10px;
+  /* background: #BDD1DB; */
+  width: 35em;
+  height: 43em;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+  transition: .3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card::after{
+  content: '';
+  background-color: rgba(50, 13, 136,0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 137%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: .3s ease-in-out .35s;  
+}
+
+.content{
+  color: white;
+  position: absolute;
+  top: 88%;
+  padding: 0 30px;
+  transition: .5s cubic-bezier(.33,.99,.61,1.26) .55s;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y:sc;
+}
+
+.content h3{
+  margin-bottom: 2em;
+  align-self: start;
+}
+
+button{
+  padding: 10px 35px;
+  border-radius: 20px;
+  border: 0;
+  margin-top: 15px;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 1;
+  transition: .3s linear;
+  overflow: hidden;
+  background-color: #121930e7;
+  cursor: pointer;
+}
+
+button::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0.5% at 0 0);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: .3s linear;
+}
+
+
+.card:hover .content{
+  top: 10%;
+ 
+}
+
+.card:hover::after{
+  top: 50%;
+}
+
+.card:hover .content::after{
+  width: 80%;
+}
+
+.card-button:hover{
+  color: white;
+  background-color: #3e4042;
+}
