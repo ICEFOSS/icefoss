@@ -3,8 +3,6 @@ import {Myinfo} from "../Top-division-components/Top-division-components.jsx";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-import { Hacking } from "./hacking.jsx";
-// import { ROS } from "./ros.jsx";
 import "./about.css";
 import {
   Logo,
@@ -29,6 +27,8 @@ import {
   frequentlyAskedQuestions,
   FOOTER
 } from "../../Module/General";
+
+import { Hacking } from "./hacking.jsx";
 import { ROS } from "./ros.jsx";
 
 // javascript Map for sponsors
@@ -172,8 +172,8 @@ export default function HomePage(props) {
         <div>
           <h1>Workshop</h1>
           <div>
-          <ROS/>
-          <Hacking/>
+            <ROS/>
+            <Hacking/>
           </div>
         </div>
 
