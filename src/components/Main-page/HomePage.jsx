@@ -30,19 +30,20 @@ import {
 
 import { Hacking } from "./hacking.jsx";
 import { ROS } from "./ros.jsx";
+import { Devconn } from "./devconnect.jsx";
 
 // javascript Map for sponsors
 
 function SponsorGroup(props) {
   return (
-    <Row>
+    <div className="flex">
       {props.map(s => (
-        <Col className="" sm={12} lg={4} md={6}>
+        <div >
           {" "}
           <Sponsor srcx={s.src} link={s.link} />{" "}
-        </Col>
+        </div>
       ))}
-    </Row>
+    </div>
   );
 }
 
@@ -171,9 +172,10 @@ export default function HomePage(props) {
         {/* Workshops */}
         <div>
           <h1>Workshop</h1>
-          <div>
+          <div className="flex">
             <ROS/>
             <Hacking/>
+            <Devconn/>
           </div>
         </div>
 
