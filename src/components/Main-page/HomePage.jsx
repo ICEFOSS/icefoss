@@ -170,9 +170,9 @@ export default function HomePage(props) {
         </div>
 
         {/* Workshops */}
-        <div>
+        <div id='workshop'>
           <h1>Workshop</h1>
-          <div className="flex">
+          <div className="flex ">
             <ROS/>
             <Hacking/>
             <Devconn/>

@@ -1,14 +1,17 @@
 // Importing all sponsors logos from Assets
 import taskade from "./Assets/sponsorsLogos/taskade.png";
 import fed from "./Assets/sponsorsLogos/fed.png";
-import rezoy from "./Assets/sponsorsLogos/rezoy.svg";
+import rezoy from "./Assets/sponsorsLogos/rezoy.png";
 import emvigo from "./Assets/sponsorsLogos/emvigo.svg";
 import verteil from "./Assets/sponsorsLogos/verteil.svg";
 import seq from "./Assets/sponsorsLogos/seq.png";
 import digo from "./Assets/sponsorsLogos/do.svg";
-import armia from "./Assets/sponsorsLogos/armia.svg";
+import armia from "./Assets/sponsorsLogos/armia.png";
 import net from "./Assets/sponsorsLogos/net.png";
 import {FFGSVG} from "./ffscLogo";
+import ninetyplus from "./Assets/sponsorsLogos/ninetyplus.png"
+import xyz from "./Assets/sponsorsLogos/xyz.png"
+
 // import sublime from "./Assets/sponsorsLogos/sublime.png";
 
 //import ll from "./Assets/sponsorsLogos/ll.png";
@@ -194,18 +197,16 @@ const sponsorLogos = [
   [
     {src: net, link: "https://netstratum.com/"},
     {src: fed, link: "https://www.federalbank.co.in/career"},
-    {src: seq, link: "https://india.sequoiacap.com/"}
-  ], //Array 1
-  [
+    {src: seq, link: "https://india.sequoiacap.com/"},
     {src: verteil, link: "https://www.verteil.com/"},
     {src: emvigo, link: "https://www.emvigotech.com/"},
-    {src: rezoy, link: "https://www.rezoy.app/en/"}
-  ], //Array 2
-  [
+    {src: rezoy, link: "https://www.rezoy.app/en/"},
     {src: taskade, link: "https://www.taskade.com/"},
     {src: digo, link: "https://www.digitalocean.com/"},
-    {src: armia, link: "https://www.armia.com/careers.php"}
-  ] //Array 3
+    {src: armia, link: "https://www.armia.com/careers.php"},
+    {src: ninetyplus, link: "https://mytuitionapp.com/"},
+    {src: xyz, link: "https://gen.xyz/"}, 
+  ]
   //[{src: }, {src: ll}, {src: ACF}] //Array 4
 ];
 
