@@ -181,9 +181,9 @@ const TeamInfo = [
       img: "https://media-exp1.licdn.com/dms/image/C5603AQFfqpjdELCeJQ/profile-displayphoto-shrink_200_200/0/1584864763325?e=1656547200&v=beta&t=4Xo13Pm61VoorWVD940xfyyJTpnoXPsfmvd9US6zgfM"
     },
     {
-      Name: "Sujith Sukumaran",
-      role: "Sujith Sukumaran",
-      linkedin: "https://www.linkedin.com/in/sukumaransujith/",
+      Name: "Siji Sahadevan",
+      role: "Siji Sahadevan",
+      linkedin: "https://www.linkedin.com/in/siji-sahadevan-a8694826/",
       img: Siji
     }
   ]
